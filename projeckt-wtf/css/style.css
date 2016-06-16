@@ -1,0 +1,5232 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+}
+.img-origin {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bgTC {
+  background-position: top CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+}
+.bgCC {
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+}
+.bgCCC {
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+}
+
+.recvisits {line-height: 1.8; text-align: left;}
+
+.pov1 {
+  -moz-transform: rotate(45deg);
+  /* Для Firefox */
+  -ms-transform: rotate(45deg);
+  /* Для IE */
+  -webkit-transform: rotate(45deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(45deg);
+  /* Для Opera */
+  transform: rotate(45deg);
+}
+.pov2 {
+  -moz-transform: rotate(-90deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-90deg);
+  /* Для IE */
+  -webkit-transform: rotate(-90deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg);
+  /* Для Opera */
+  transform: rotate(-90deg);
+}
+.pov3 {
+  -moz-transform: rotate(-42deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-42deg);
+  /* Для IE */
+  -webkit-transform: rotate(-42deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-42deg);
+  /* Для Opera */
+  transform: rotate(-42deg);
+}
+.pov4 {
+  -moz-transform: rotate(-132deg);
+  /* Для Firefox */
+  -ms-transform: rotate(132deg);
+  /* Для IE */
+  -webkit-transform: rotate(132deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(132deg);
+  /* Для Opera */
+  transform: rotate(132deg);
+}
+html {
+  position: relative;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+}
+.m-speed {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.med-speed {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.mod-speed {
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.speed2-5 {
+  -webkit-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #636363;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-weight: 400;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* draw any selected text yellow on red background */
+::-moz-selection {
+  color: #fff;
+  background: #000;
+}
+::selection {
+  color: #fff;
+  background: #000;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:active,
+a:hover {
+  outline: 0;
+  color: #e43636;
+}
+p {
+  font-size: 160%;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.4;
+  padding: 0px 0;
+  margin: 10px 0px;
+}
+img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: 800;
+}
+dfn {
+  font-style: italic;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'DINNextCYR-Heavy';
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  -o-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+  }
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: none;
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  -moz-animation-name: fadeOutDown;
+  -o-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+}
+@-moz-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translate3d(0, 100%, 0);
+  }
+}
+@-o-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -o-transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.translateUp {
+  -webkit-animation-name: translateUp;
+  -moz-animation-name: translateUp;
+  -o-animation-name: translateUp;
+  animation-name: translateUp;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes translateUp {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%) translateY(8%);
+  }
+}
+@-moz-keyframes translateUp {
+  0% {
+    -moz-transform: translateY(0);
+  }
+  100% {
+    -moz-transform: translateY(-100%) translateY(8%);
+  }
+}
+@-o-keyframes translateUp {
+  0% {
+    -o-transform: translateY(0);
+  }
+  100% {
+    -o-transform: translateY(-100%) translateY(8%);
+  }
+}
+@keyframes translateUp {
+  0% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%) translateY(8%);
+    -moz-transform: translateY(-100%) translateY(8%);
+    -ms-transform: translateY(-100%) translateY(8%);
+    transform: translateY(-100%) translateY(8%);
+  }
+}
+.translateDown {
+  -webkit-animation-name: translateDown;
+  -moz-animation-name: translateDown;
+  -o-animation-name: translateDown;
+  animation-name: translateDown;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes translateDown {
+  0% {
+    top: calc(-92.30769231%);
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes translateDown {
+  0% {
+    top: calc(-92.30769231%);
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes translateDown {
+  0% {
+    top: calc(-92.30769231%);
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes translateDown {
+  0% {
+    top: calc(-92.30769231%);
+  }
+  100% {
+    top: 0;
+  }
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  -moz-animation-name: zoomIn;
+  -o-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes slideshowBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideshowBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes slideshowBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideshowBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slideshowBlink {
+  -webkit-animation-name: slideshowBlink;
+  -moz-animation-name: slideshowBlink;
+  -o-animation-name: slideshowBlink;
+  animation-name: slideshowBlink;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -o-transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    -moz-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(0, 0, 0);
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: scale3d(0, 0, 0);
+  }
+  50% {
+    -moz-transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -moz-transform: scale3d(0, 0, 0);
+  }
+}
+@-o-keyframes bounce {
+  0% {
+    -o-transform: scale3d(0, 0, 0);
+  }
+  50% {
+    -o-transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -o-transform: scale3d(0, 0, 0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale3d(0, 0, 0);
+    -moz-transform: scale3d(0, 0, 0);
+    -ms-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(0, 0, 0);
+    -moz-transform: scale3d(0, 0, 0);
+    -ms-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+  }
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    -o-transform: rotate(0);
+  }
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+lesshat-selector {
+  -lh-property: 0;
+}
+@-webkit-keyframes bounceUpDown {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 00px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+@-moz-keyframes bounceUpDown {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 00px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+@-o-keyframes bounceUpDown {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 00px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+@keyframes bounceUpDown {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 00px;
+  }
+  100% {
+    bottom: 20px;
+  }
+}
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+ 
+.button {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.button .sakas {
+  position: relative;
+  display: inline-table;
+  background-image: -moz-linear-gradient(90deg, #ffde1d 0%, #fee659 100%);
+  background-image: -webkit-linear-gradient(90deg, #ffde1d 0%, #fee659 100%);
+  background-image: -ms-linear-gradient(90deg, #ffde1d 0%, #fee659 100%);
+  color: #000;
+  padding: 16px 30px 12px;
+  border-radius: 8px;
+  border: solid 1px #e8be19;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  font-family: 'DINNextCYR-Heavy';
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.button .sakas:hover {
+  color: #fee340;
+  background: transparent;
+}
+header {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 0%;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+  background: url(../img/bg-1.jpg);
+  z-index: 999;
+  min-height: 800px;
+}
+
+nav {position: relative; display: block; height: 170px; width: 100%; padding: 0 5%;}
+
+header .logo {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: auto;
+  height: 170px;
+  z-index: 99999;
+}
+header .logo img {
+  position: relative;
+  display: block;
+  margin: 0px;
+}
+header .contacts {
+  position: relative;
+  display: block;
+  width: 75%;
+  float: right;
+  height: 170px;
+}
+header .contacts .adr {
+  position: relative;
+  display: inline-table;
+  float: left;
+  height: 100%;
+  z-index: 99999;
+}
+header .contacts .adr .icon {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+header .contacts .adr .icon i {
+  font-size: 2.6rem;
+  color: #e43636;
+  padding: 0 25px;
+}
+header .contacts .adr span {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1.6;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header .contacts .adr:hover span {
+  color: #e43636;
+}
+header .contacts .phone {
+  position: relative;
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 24%;
+  z-index: 99999;
+}
+header .contacts .phone .mdl {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 50%;
+}
+header .contacts .phone .mdl i.tels {
+  font-size: 1.5rem;
+  display: table-cell;
+  vertical-align: bottom;
+  color: #e43636;
+  padding: 5px;
+}
+header .contacts .phone .mdl i.mails {
+  font-size: 1.5rem;
+  display: table-cell;
+  vertical-align: top;
+  color: #e43636;
+  padding: 5px;
+}
+header .contacts .phone .mdl .tel {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  line-height: 1.4;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 6px;
+}
+header .contacts .phone .mdl .tel:hover {
+  color: #e43636;
+}
+header .contacts .phone .mdl .mail {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+  line-height: 1.4;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  padding: 6px 0;
+}
+header .contacts .phone .mdl .mail:hover {
+  color: #e43636;
+}
+header .t-middle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+header .info {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  padding: 0 15%;
+}
+header h1 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 4rem;
+  padding: 50px 0 0;
+}
+header .description {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 25px 25px;
+}
+header .bottom {
+  position: absolute;
+  width: 100%;
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  -webkit-animation: bounceUpDown 2s infinite ease-in-out;
+  -moz-animation: bounceUpDown 2s infinite ease-in-out;
+  -o-animation: bounceUpDown 2s infinite ease-in-out;
+  animation: bounceUpDown 2s infinite ease-in-out;
+}
+header .bottom .reed {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+header .bottom .reed span {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0px 25px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header .bottom .reed i {
+  position: relative;
+  font-size: 3.5rem;
+  display: block;
+  color: #fff;
+  padding: 0px 25px 35px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header .bottom:hover span {
+  color: #fee340;
+}
+header .bottom:hover i {
+  color: #fee340;
+}
+.wrapper {
+  position: relative;
+  display: block;
+  top: 100%;
+  background: #fff;
+  width: 100%;
+  float: left;
+  min-height: 500px;
+  padding: 100px 0 0;
+  overflow: hidden;
+}
+.labels {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 6% 10%;
+}
+.labels .label {
+  position: relative;
+  display: inline-block;
+  width: 24.7%;
+}
+.labels .label::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 37%;
+  left: 78%;
+  width: 45%;
+  height: 1px;
+  background: #c8c8c8;
+}
+.labels .b-non::before {
+  content: '';
+  display: none;
+}
+.labels img {
+  position: relative;
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  padding: 25px 25px 0;
+}
+.labels span {
+  position: relative;
+  padding: 25px;
+  line-height: 1.4;
+  color: #636363;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  display: block;
+}
+.labels strong {
+  color: #000;
+}
+.katalog {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 25px 10%;
+}
+.katalog h2 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #000;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 4rem;
+  padding: 50px 0 0;
+}
+.katalog p {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  padding: 25px 25px 100px;
+  font-size: 1.4rem;
+  color: #636363;
+}
+.katalog .row {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.katalog .row .article {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  float: left;
+  padding: 10px;
+}
+.katalog .row .article .border {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  border-radius: 10px;
+  padding: 25px;
+  float: left;
+}
+.katalog .row .cena {
+  position: relative;
+  display: block;
+  text-align: right;
+}
+.katalog .row .cena span {
+  position: relative;
+  display: inline-block;
+  padding: 12px 20px;
+  background: #fee340;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-size: 1.2rem;
+    white-space: nowrap;
+}
+.katalog .row .image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.katalog .row img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.katalog .row .title {
+  position: relative;
+  display: table;
+  float: left;
+  width: 100%;
+  height: 80px;
+}
+.katalog .row .title h3 {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 700;
+  letter-spacing: 0.1rem;
+}
+.katalog .row .button {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  background-image: -moz-linear-gradient(90deg, #e43636 0%, #ff3030 100%);
+  background-image: -webkit-linear-gradient(90deg, #e43636 0%, #ff3030 100%);
+  background-image: -ms-linear-gradient(90deg, #e43636 0%, #ff3030 100%);
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 16px 25px 14px;
+  border-radius: 10px;
+  font-family: 'DINNextCYR-Heavy';
+  margin: 15px 0 10px;
+}
+.katalog .row .button i {
+  padding: 0 7px;
+}
+.katalog .row .button:hover {
+  opacity: 0.8;
+}
+.katalog .row .teh {
+  position: relative;
+  display: block;
+  margin: 25px 0 15px;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+
+.katalog .row .teh span {
+  position: relative;
+  display: inline-block;
+  color: #636363;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.katalog .row .teh span::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  bottom: -2px;
+  height: 1px;
+  background: #636363;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.katalog .row .teh:hover span {
+  color: #e43636;
+}
+.katalog .row .teh:hover span::before {
+  content: '';
+  background: #e43636;
+}
+.konsult {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+  padding: 25px;
+  min-height: 570px;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+  background: url(../img/bg2.jpg);
+}
+.konsult h2 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #FFF;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 4rem;
+  padding: 50px 0 0;
+}
+.konsult p {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  padding: 0px 25px 25px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.konsult .button {
+  margin: 0px;
+}
+.konsult .poddon {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  bottom: -47%;
+}
+.konsult .poddon img {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+.hous {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 370px 17% 25px;
+}
+.hous h2 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #000;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 4rem;
+  padding: 70px 0 0;
+}
+.hous p {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  padding: 25px 25px 100px;
+  font-size: 1.4rem;
+  color: #636363;
+}
+.hous .slider {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+}
+.hous .slider .display {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  padding: 25px 35px;
+}
+.hous .slider .image {
+  position: relative;
+  height: 560px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+  border: solid 1px #c8c8c8;
+  border-radius: 8px;
+}
+.hous .slider .description {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 45px 0px;
+}
+.hous .slider span.low {
+  position: relative;
+  display: block;
+  font-size: 1.4rem;
+  color: #636363;
+  padding: 8px 0;
+}
+.hous .slider span.low::before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background: #fee340;
+}
+.hous .slider strong {
+  margin-left: 75px;
+  color: #000;
+}
+.hous .slider .buttons-h {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  padding: 25px 45px;
+  padding: 10px 45px;
+  vertical-align: top;
+}
+.hous .slider a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  background: #fff;
+  border-radius: 10px;
+  border: solid 1px #c8c8c8;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.hous .slider a .name {
+  position: relative;
+  display: block;
+  font-size: 1.6rem;
+  color: #636363;
+  padding: 16px 0 4px;
+  text-align: center;
+}
+.hous .slider a .name strong {
+  margin: 0;
+  color: #000;
+}
+.hous .slider a .desc {
+  position: relative;
+  display: block;
+  font-weight: 400;
+  padding: 4px 0px 16px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #636363;
+}
+.hous .slider .active {
+  background: #e43636;
+}
+.hous .slider .active .name {
+  color: #fff;
+}
+.hous .slider .active .name strong {
+  color: #fff;
+}
+.hous .slider .active .desc {
+  color: #000;
+}
+.hous .slider .button {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+}
+.hous .slider .button .sakas {
+  position: relative;
+  display: inline-table;
+  background-image: -moz-linear-gradient(90deg, #ffde1d 0%, #fee659 100%);
+  background-image: -webkit-linear-gradient(90deg, #ffde1d 0%, #fee659 100%);
+  background-image: -ms-linear-gradient(90deg, #ffde1d 0%, #fee659 100%);
+  color: #000;
+  padding: 25px 32px 19px;
+  border-radius: 8px;
+  border: solid 1px #e8be19;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: 'DINNextCYR-Heavy';
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.hous .slider .button .sakas:hover {
+  color: #000;
+  background: #fff;
+}
+.sert {
+  position: relative;
+  display: table;
+  width: 100%;
+  float: left;
+  margin-top: 130px;
+  padding: 75px 25px;
+  background: #f5f4f4;
+}
+.sert .content {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+.sert .content h2 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #000;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 5rem;
+  padding: 45px 0 0;
+}
+.sert .content p {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  padding: 25px 25px 35px;
+  font-size: 1.4rem;
+  color: #636363;
+}
+.sert .pages {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  padding: 25px 14%;
+}
+.sert .pages .p-g {
+  position: relative;
+  display: inline-block;
+  float: left;
+  border: solid 25px #f5f4f4;
+  width: 25%;
+}
+.sert .pages .p-g img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.sert .button {
+  float: left;
+  width: 100%;
+  padding: 50px 0;
+}
+.sert .button .sakas:hover {
+  color: #000;
+}
+.go {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0px;
+  height: 730px;
+  float: left;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+  background: url(../img/bg3.jpg);
+}
+.go .t-middle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.go .info {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  padding: 0 15%;
+}
+.go h1 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 4rem;
+  padding: 50px 0 0;
+}
+.go .description {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 25px 25px;
+}
+.contact {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 25px;
+  height: 500px;
+  background: #fff;
+  float: left;
+  z-index: 9999999;
+}
+.contact h2 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #000;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 5rem;
+  padding: 80px 0 0;
+}
+.contact p {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  padding: 20px 25px;
+  font-size: 1.7rem;
+  color: #636363;
+}
+.contact h3 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #000;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 20px 0 0;
+}
+.contact span {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #636363;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 20px 25px;
+}
+.contact span strong {
+  margin-left: 15px;
+  color: #000;
+}
+.contact .rec {
+  position: absolute;
+  left: 0px;
+  bottom: -68%;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.contact .rec .lol {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  padding: 5px;
+  font-size: 1.8rem;
+  color: #636363;
+  z-index: 9999999;
+  border-bottom: 2px dashed #636363;
+}
+.contact .rec .lol:hover {
+  color: #e43636;
+  border-bottom: 2px dashed #e43636;
+}
+.wtf {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0px;
+  bottom: -99%;
+  z-index: 999999;
+}
+.wtf img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.map {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0px;
+  min-height: 600px;
+  border-top: solid 200px #fff;
+  float: left;
+}
+iframe {
+  position: relative;
+  display: block;
+  width: 140%;
+  margin-left: -40%;
+  height: 800px;
+}
+#fade {
+  display: none;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .50;
+  z-index: 9999999;
+}
+.popup_block {
+  display: none;
+  top: 0px;
+  float: left;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000000000;
+}
+.popup_block .menu-pos {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 10.5% 36%;
+  min-height: 900px;
+}
+.popup_block .menu-pos .form {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 35%;
+  height: 35%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px;
+}
+.popup_block .menu-pos .form h2 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #000;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 15px 0 40px;
+}
+.popup_block .menu-pos .form form {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  padding: 45px 17%;
+  height: 100%;
+  width: 100%;
+}
+.popup_block .menu-pos .form form label {
+  position: relative;
+  display: block;
+  padding: 20px 5px 10px;
+  float: left;
+  color: #636363;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+}
+.popup_block .menu-pos .form form input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  font-size: 1rem;
+  padding: 12px 42px 12px 5px;
+  border: solid 1px #ebebeb;
+  margin: 0px;
+  border-radius: 5px;
+}
+.popup_block .menu-pos .form form .ico-block {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+}
+.popup_block .menu-pos .form form .ico-block i {
+  position: absolute;
+  display: block;
+  top: 12px;
+  right: 15px;
+  font-size: 1.3rem;
+  color: #dadada;
+}
+.popup_block .menu-pos .form form .button {
+  width: 100%;
+  margin-top: 25px;
+  float: left;
+}
+.popup_block .menu-pos .form form .button .sakas {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 24px 30px 20px;
+  font-size: 1.3rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.popup_block .menu-pos .form form .button:hover .sakas {
+  color: #000;
+}
+.popup_block .menu-pos .form form .pe-inf {
+  position: absolute;
+  display: block;
+  bottom: 25px;
+  left: 0px;
+  width: 100%;
+}
+.popup_block .menu-pos .form form .pe-inf p {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  color: #cacaca;
+}
+.popup_block .menu-pos .form a.close {
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 42px;
+  top: -57px;
+  right: -57px;
+  border-radius: 25px;
+  border: solid 2px #fff;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.popup_block .menu-pos .form a.close span {
+  position: absolute;
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: #fff;
+  -moz-transform: rotate(45deg);
+  /* Для Firefox */
+  -ms-transform: rotate(45deg);
+  /* Для IE */
+  -webkit-transform: rotate(45deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(45deg);
+  /* Для Opera */
+  transform: rotate(45deg);
+  top: 18px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  left: 6px;
+}
+.popup_block .menu-pos .form a.close span::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  -moz-transform: rotate(-90deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-90deg);
+  /* Для IE */
+  -webkit-transform: rotate(-90deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg);
+  /* Для Opera */
+  transform: rotate(-90deg);
+  top: 0px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  left: 0px;
+}
+.popup_block .menu-pos .form a.close:hover {
+  border: solid 2px #fee340;
+}
+.popup_block .menu-pos .form a.close:hover span {
+  background: #fee340;
+}
+.popup_block .menu-pos .form a.close:hover span::before {
+  content: '';
+  background: #fee340;
+}
+.popup_block .menu-pos .pasib {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.popup_block .menu-pos .pasib .pos {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 45px 12%;
+}
+.popup_block .menu-pos .pasib .pos article {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.popup_block .menu-pos .pasib .pos i {
+  position: relative;
+  display: block;
+  color: #e43636;
+  font-size: 7rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.popup_block .menu-pos .pasib .pos h2 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #000;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 40px 0 15px;
+}
+.popup_block .menu-pos .pasib .pos p {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #000;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.popup_block .menu-pos .recvisity {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.popup_block .menu-pos .recvisity .pos {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 45px 12%;
+}
+.popup_block .menu-pos .recvisity .pos article {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.popup_block .menu-pos .recvisity .pos .rec-a {vertical-align: top;} 
+
+.popup_block .menu-pos .recvisity .pos i {
+  position: relative;
+  display: block;
+  color: #e43636;
+  font-size: 7rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.popup_block .menu-pos .recvisity .pos h2 {
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #000;
+  font-family: 'DINNextCYR-Heavy';
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 25px 0 15px;
+}
+.popup_block .menu-pos .recvisity .pos p {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #000;
+  font-family: 'proxima_nova_rgregular', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+
+
+@media screen and (min-width:2100px) {
+
+.contact .rec {
+    position: absolute;
+    left: 0px;
+    bottom: -78%;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+    
+
+.contact .rec .lol {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 2.8rem;
+    color: #636363;
+    z-index: 9999999;
+    border-bottom: 2px dashed #636363;
+}    
+  
+   
+    
+    
+}
+
+
+
+
+@media screen and (max-width:1700px) {
+
+    
+header .contacts {
+    height: 150px;
+}  
+nav {position: relative; display: block; width: 100%; padding: 0 5%;}
+ 
+header .contacts .phone .mdl .mail {
+    font-size: 0.9rem;
+}  
+header .contacts .phone .mdl .tel {
+    font-size: 1.2rem;
+} 
+    
+header .contacts .phone .mdl i.tels {
+    font-size: 1.4rem;
+}    
+
+header .contacts .phone .mdl i.mails {
+    font-size: 1.4rem;
+}    
+    
+header .logo img {
+    width: 90%;
+}    
+    
+    
+header h1 {
+    font-size: 3.5rem;
+    padding: 40px 0 0;
+}    
+
+header .description {
+    font-size: 1.4rem;
+}
+    
+.button .sakas {
+    font-size: 1rem;
+}    
+  
+
+header .bottom .reed span {
+    font-size: 1.1rem;
+}    
+
+header .bottom .reed i {
+    font-size: 3.3rem;
+}  
+    
+header h1 {
+    font-size: 3.3rem;
+    padding: 35px 0 0;
+}
+    
+.labels {
+    padding: 6% 7%;
+}    
+
+.katalog {
+    padding: 25px 7%;
+}    
+    
+.katalog h2 {
+    font-size: 3.8rem;
+    padding: 45px 0 0;
+} 
+    
+.katalog p {
+    padding: 25px 25px 90px;
+    font-size: 1.3rem;
+}
+    
+.katalog .row .title h3 {
+    font-size: 1.2rem;
+} 
+    
+.katalog .row .button {
+    font-size: 1.1rem;
+
+}    
+ 
+
+.konsult h2 {
+    font-size: 3.8rem;
+    padding: 45px 0 0;
+} 
+    
+.konsult p {
+    padding: 25px 25px 90px;
+    font-size: 1.3rem;
+}
+ 
+    
+.hous {
+    padding: 360px 13% 25px;
+}    
+    
+.hous h2 {
+    font-size: 3.8rem;
+    padding: 45px 0 0;
+} 
+    
+.hous p {
+    padding: 25px 25px 90px;
+    font-size: 1.3rem;
+}
+ 
+.hous .slider .image {
+    height: 540px;
+    border-radius: 8px;
+}    
+    
+.hous .slider a .name {
+    font-size: 1.4rem;
+}
+    
+.hous .slider a .desc {
+    font-size: 1.3rem;
+}
+  
+.hous .slider span.low {
+    font-size: 1.2rem;
+    padding: 8px 0;
+} 
+    
+.hous .slider span.low::before {
+    content: '';
+    bottom: 6px;
+    width: 22px;
+    height: 22px;
+}
+    
+.hous .slider strong {
+    margin-left: 70px;
+}
+    
+.go h1 {
+    font-size: 3.8rem;
+    padding: 45px 0 0;
+} 
+    
+.go .description { 
+    padding: 25px 25px 90px;
+    font-size: 1.3rem;
+}
+    
+.sert .content h2 {    
+    font-size: 3.8rem;
+    padding: 45px 0 0;
+}
+    
+
+.sert .content p {    
+    padding: 25px 25px 90px;
+    font-size: 1.3rem;
+} 
+    
+.contact h2 {
+    font-size: 3.8rem;
+    padding: 45px 0 0;
+} 
+    
+.contact p {
+    padding: 25px 25px;
+    font-size: 1.3rem;
+} 
+    
+.contact h3 {
+    font-size: 1.5rem;
+}
+  
+.contact span {
+    font-size: 1.4rem;
+    padding: 20px 25px;
+}
+    
+.wtf {
+    bottom: -76%;
+}
+
+.contact .rec {
+    bottom: -50%;
+}
+    
+.contact .rec .lol {
+    font-size: 1.6rem;
+    color: #636363;
+    z-index: 9999999;
+    border-bottom: 2px dashed #636363;
+}
+    
+.map {
+    border-top: solid 160px #fff;
+}
+ 
+iframe {
+    width: 140%;
+    margin-left: -35%;
+    height: 700px;
+}
+
+    
+.popup_block .menu-pos {
+
+    padding: 10.5% 32%;
+    min-height: 800px;
+}
+    
+.popup_block .menu-pos .form form .button .sakas {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 22px 30px 18px;
+    font-size: 1rem;
+}
+    
+.popup_block .menu-pos .form form .pe-inf {
+    bottom: 15px;
+}
+
+}
+
+
+
+@media screen and (max-width:1380px) {
+
+    
+header{
+    min-height: 600px;
+}  
+    
+nav {position: relative; display: block; width: 100%;  height: 130px; padding: 0 5%;}
+    
+header .contacts {
+    height: 130px;
+}    
+ 
+header .contacts .phone .mdl .mail {
+    font-size: 0.8rem;
+}  
+header .contacts .phone .mdl .tel {
+    font-size: 1.1rem;
+} 
+    
+header .contacts .phone .mdl i.tels {
+    font-size: 1.2rem;
+}    
+
+header .contacts .phone .mdl i.mails {
+    font-size: 1.2rem;
+}    
+    
+header .logo img {
+    width: 80%;
+}    
+   
+ header .contacts .adr span {
+    line-height: 1.4;
+    font-size: 0.9rem;
+}   
+    
+header h1 {
+    font-size: 3rem;
+    padding: 35px 0 0;
+}
+    
+
+
+header .description {
+    font-size: 1.2rem;
+    padding: 15px 25px;
+}
+    
+.button .sakas {
+    font-size: 0.9rem;
+}    
+  
+
+header .bottom .reed span {
+    font-size: 1rem;
+}    
+
+header .bottom .reed i {
+    font-size: 3rem;
+    padding: 0px 25px 15px;
+}  
+    
+    
+.labels span {
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 1rem;
+}    
+    
+.labels {
+    padding: 4% 30px;
+}    
+
+.katalog {
+    padding: 25px 35px;
+}    
+    
+.katalog h2 {
+    font-size: 3.4rem;
+    padding: 45px 0 0;
+} 
+    
+.katalog p {
+    padding: 25px 25px 70px;
+    font-size: 1.1rem;
+}
+    
+.katalog .row .cena span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 18px;
+    background: #fee340;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+    
+.katalog .row .title h3 {
+    font-size: 1.1rem;
+} 
+    
+.katalog .row .teh span {
+font-size: 0.9rem;
+}    
+    
+.katalog .row .button {
+    font-size: 1rem;
+
+}    
+ 
+
+.konsult h2 {
+    font-size: 3.4rem;
+    padding: 45px 0 0;
+} 
+    
+.konsult p {
+    padding: 25px 25px 70px;
+    font-size: 1.1rem;
+}
+ 
+ .konsult {
+    min-height: 495px;
+}   
+    
+.konsult .poddon img {
+    position: relative;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+} 
+
+.konsult .poddon {
+    bottom: -62%;
+}
+    
+.hous {
+    padding: 360px 5% 25px;
+}    
+    
+.hous h2 {
+    font-size: 3.4rem;
+    padding: 45px 0 0;
+} 
+    
+.hous p {
+    padding: 25px 25px 70px;
+    font-size: 1.1rem;
+}
+ 
+.hous .slider .image {
+    height: 490px;
+    border-radius: 8px;
+}    
+    
+  
+.hous .slider span.low {
+    font-size: 1.2rem;
+    padding: 8px 0;
+} 
+    
+.hous .slider span.low::before {
+    content: '';
+    bottom: 6px;
+    width: 22px;
+    height: 22px;
+}
+    
+.hous .slider strong {
+    margin-left: 70px;
+}
+    
+    
+.hous .slider a .desc {
+    padding: 4px 0px 12px;
+    font-size: 1.1rem;
+}
+    
+.hous .slider a .name {
+    font-size: 1.2rem;
+    padding: 12px 0 4px;
+}    
+
+.hous .slider .button {
+    margin-top: 45px;
+}
+
+    
+ 
+.go {
+    height: 560px;
+}   
+    
+.sert .button {
+    padding: 25px 0;
+    margin-top: 40px
+}    
+  
+    
+.sert {
+    margin-top: 85px;
+}
+    
+.sert .pages {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 25px 10%;
+}   
+
+    
+.go h1 {
+    font-size: 3.4rem;
+    padding: 45px 0 0;
+} 
+    
+.go .description { 
+    padding: 25px 25px 70px;
+    font-size: 1.1em;
+}
+    
+.sert .content h2 {    
+    font-size: 3.4rem;
+    padding: 45px 0 0;
+}
+    
+
+.sert .content p {    
+    padding: 25px 25px 70px;
+    font-size: 1.1rem;
+} 
+    
+.contact h2 {
+    font-size: 3.4rem;
+    padding: 45px 0 0;
+} 
+    
+.contact p {
+    padding: 25px 25px;
+    font-size: 1.1rem;
+} 
+    
+.contact h3 {
+    font-size: 1.3rem;
+}
+  
+.contact span {
+    font-size: 1.2rem;
+    padding: 20px 25px;
+}
+    
+.wtf {
+    bottom: -76%;
+}
+
+.contact .rec {
+    bottom: -50%;
+}
+    
+.contact .rec .lol {
+    font-size: 1.4rem;
+    color: #636363;
+    z-index: 9999999;
+    border-bottom: 2px dashed #636363;
+}
+    
+.map {
+    border-top: solid 160px #fff;
+}
+ 
+iframe {
+    width: 140%;
+    margin-left: -25%;
+    height: 600px;
+}
+
+    
+.popup_block .menu-pos {
+
+    padding: 5% 32%;
+    min-height: 600px;
+}
+   
+.popup_block .menu-pos .form form .pe-inf p {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #cacaca;
+}   
+    
+.popup_block .menu-pos .form form .button .sakas {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 12px 30px 9px;
+    font-size: 0.9rem;
+}
+    
+.popup_block .menu-pos .form form .pe-inf {
+    bottom: 15px;
+}
+    
+.popup_block .menu-pos .form h2 {
+    font-size: 1.4rem;
+    padding: 15px 0 20px;
+}
+
+}
+
+@media screen and (max-width:1280px) {
+
+.katalog .row .article {
+    position: relative;
+    display: inline-block;
+    width: 33.33333%;
+    float: left;
+    padding: 15px;
+}  
+    
+.wtf {
+    bottom: -69%;
+}
+    
+}
+
+
+@media screen and (max-width:1150px) {
+
+    
+header{
+    min-height: 600px;
+}     
+    
+nav {position: relative; display: block; height: 95px; width: 100%; padding: 0 5%;}   
+    
+header .contacts {
+    height: 95px;
+}    
+ 
+header .contacts .phone .mdl .mail {
+    font-size: 0.8rem;
+}  
+header .contacts .phone .mdl .tel {
+    font-size: 0.8rem;
+} 
+
+header .contacts .adr .icon i {
+    font-size: 2.2rem;
+    padding: 0 25px;
+}
+
+    
+    
+header .contacts .phone .mdl i.tels {
+    font-size: 1.2rem;
+}    
+
+header .contacts .phone .mdl i.mails {
+    font-size: 1.2rem;
+    padding: 5px 9px;
+}   
+    
+header .contacts .phone .mdl i.tels {
+    padding: 5px 8px;
+}
+    
+header .logo img {
+    width: 60%;
+}    
+   
+ header .contacts .adr span {
+    line-height: 1.4;
+    font-size: 0.9rem;
+}   
+    
+header h1 {
+    font-size: 2.5rem;
+    padding: 35px 0 0;
+}
+    
+.button {
+    margin-top: 40px;
+}
+
+header .description {
+    font-size: 1rem;
+    padding: 15px 25px;
+}
+    
+.button .sakas {
+    font-size: 0.9rem;
+}    
+  
+
+header .bottom .reed span {
+    font-size: 1rem;
+}    
+
+header .bottom .reed i {
+    font-size: 2.6rem;
+    padding: 0px 25px 15px;
+}  
+  
+    
+.wrapper {
+    padding: 60px 0 0;
+}    
+    
+.labels .label {
+    width: 24%;
+}   
+    
+.labels img {
+    width: 65%;
+    padding: 25px 25px 0;
+}    
+    
+.labels span {
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 0.9rem;
+}    
+    
+.labels {
+    padding: 4% 30px;
+}  
+    
+.katalog .row .article {
+    position: relative;
+    display: inline-block;
+    width: 33.33333%;
+    float: left;
+    padding: 10px;
+}
+    
+katalog .row .teh {
+    margin: 20px 0 10px;
+}
+   
+
+.katalog {
+    padding: 25px 35px;
+}    
+    
+.katalog h2 {
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+} 
+    
+.katalog p {
+    padding: 10px 25px 40px;
+    font-size: 0.9rem;
+}
+    
+.katalog .row .article .border {
+    padding: 20px;
+}
+    
+.katalog .row .cena span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 18px;
+    background: #fee340;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 0.8rem;
+}
+    
+.katalog .row .title h3 {
+    font-size: 1.1rem;
+} 
+    
+.katalog .row .teh span {
+font-size: 0.9rem;
+}    
+    
+.katalog .row .button {
+    font-size: 0.9rem;
+    margin: 7px 0 4px;
+
+}    
+ 
+
+.konsult h2 {
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+} 
+    
+.konsult p {
+    padding: 10px 25px 50px;
+    font-size: 0.9rem;
+}
+ 
+ .konsult {
+    min-height: 420px;
+}   
+    
+.konsult .poddon img {
+    position: relative;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+} 
+
+.konsult .poddon {
+    bottom: -40%;
+}
+    
+.hous {
+    padding: 250px 5% 25px;
+}    
+    
+.hous h2 {
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+} 
+    
+.hous p {
+    padding: 10px 25px 70px;
+    font-size: 0.9rem;
+}
+ 
+.hous .slider .image {
+    height: 400px;
+    border-radius: 8px;
+}    
+    
+  
+.hous .slider span.low {
+    font-size: 0.9rem;
+    padding: 8px 0;
+} 
+    
+.hous .slider span.low::before {
+    content: '';
+    bottom: 6px;
+    width: 22px;
+    height: 22px;
+}
+    
+.hous .slider strong {
+    margin-left: 40px;
+}
+ 
+ .hous .slider a {
+    margin: 15px 0;
+}   
+    
+.hous .slider a .desc {
+    padding: 3px 0px 10px;
+    font-size: 0.9rem;
+}
+    
+.hous .slider a .name {
+    font-size: 1rem;
+    padding: 10px 0 3px;
+}    
+
+.hous .slider .button {
+    margin-top: 35px;
+}
+    
+.hous .slider .button .sakas{    
+   padding: 17px 32px 14px;
+        font-size: 1.1rem;
+    }
+ .hous .slider .buttons-h {
+    padding: 10px 20px;
+}   
+ 
+.go {
+    height: 480px;
+}   
+    
+.sert .button {
+    padding: 25px 0;
+    margin-top: 0px
+}    
+  
+    
+.sert {
+    
+    padding: 40px 25px;
+    margin-top: 45px;
+}
+    
+.sert .pages {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 25px 0%;
+}   
+
+    
+.go h1 {
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+} 
+    
+.go .description { 
+    padding: 25px 25px 40px;
+    font-size: 0.9em;
+}
+    
+.sert .content h2 {    
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+}
+    
+
+.sert .content p {    
+    padding: 10px 25px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h2 {
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+} 
+    
+.contact p {
+    padding: 25px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h3 {
+    font-size: 1.3rem;
+}
+  
+.contact span {
+    font-size: 1.2rem;
+    padding: 20px 25px;
+}
+    
+.wtf {
+    bottom: -76%;
+}
+
+    
+.contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 25px;
+    height: 400px;
+    background: #fff;
+    float: left;
+    z-index: 9999999;
+}
+
+.contact .rec {
+    bottom: -50%;
+}
+    
+.contact .rec .lol {
+    font-size: 1.2rem;
+    color: #636363;
+    z-index: 9999999;
+    border-bottom: 2px dashed #636363;
+}
+    
+.map {
+    border-top: solid 160px #fff;
+}
+ 
+    
+    
+iframe {
+    width: 140%;
+    margin-left: -18%;
+    height: 445px;
+}
+
+.popup_block .menu-pos {
+    padding: 7% 26%;
+    min-height: 540px;
+}
+   
+.popup_block .menu-pos .form form .pe-inf p {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #cacaca;
+}   
+    
+.popup_block .menu-pos .form form .button .sakas {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 12px 30px 9px;
+    font-size: 0.9rem;
+}
+    
+.popup_block .menu-pos .form form .pe-inf {
+    bottom: 15px;
+}
+    
+.popup_block .menu-pos .form h2 {
+    font-size: 1.4rem;
+    padding: 15px 0 20px;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width:980px) {
+
+    
+header{
+    min-height: 400px;
+}     
+    nav {position: relative; display: block;  height: 65px; width: 100%; padding: 0 5%;}
+    
+    
+header .contacts {
+    height: 65px;
+}    
+ 
+header .contacts .phone .mdl .mail {
+    font-size: 0.6rem;
+    padding: 3px 0;
+}  
+header .contacts .phone .mdl .tel {
+    font-size: 0.6rem;
+} 
+
+header .contacts .adr .icon i {
+    font-size: 1.8rem;
+    padding: 0 25px;
+}
+
+    
+    
+header .contacts .phone .mdl i.tels {
+    font-size: 1rem;
+     padding: 5px 8px;
+}    
+
+header .contacts .phone .mdl i.mails {
+    font-size: 1rem;
+    padding: 3px 12px 0 9px;
+}   
+    
+   
+    
+header .logo {
+    height: 65px;
+    width: 20%;
+}     
+    
+header .logo img {
+    width: 66%;
+} 
+    
+    
+.button .sakas {
+    padding: 12px 20px 8px;
+
+}
+   
+ header .contacts .adr span {
+    line-height: 1.4;
+    font-size: 0.7rem;
+}   
+    
+header h1 {
+    font-size: 1.6rem;
+    padding: 35px 0 0;
+}
+    
+.button {
+    margin-top: 20px;
+}
+
+header .description {
+    font-size: 0.9rem;
+    padding: 7px 25px;
+}
+    
+.button .sakas {
+    font-size: 0.7rem;
+}    
+  
+
+header .bottom .reed span {
+    font-size: 0.8rem;
+}    
+
+header .bottom .reed i {
+    font-size: 2.1rem;
+    padding: 0px 25px 15px;
+}  
+  
+    
+.wrapper {
+    padding: 60px 0 0;
+}    
+    
+.labels .label {
+    width: 49%;
+}   
+    
+.labels img {
+    width: 45%;
+    padding: 25px 25px 0;
+}   
+    
+    .labels .label::before {display: none;}    
+    
+.labels span {
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 0.9rem;
+}    
+    
+.labels {
+    padding: 4% 30px;
+}  
+    
+.katalog .row .article {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+   
+    
+.katalog .row .image {
+    position: relative;
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}    
+    
+katalog .row .teh {
+    margin: 20px 0 10px;
+}
+   
+
+.katalog {
+    padding: 25px 35px;
+}    
+    
+.katalog h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.katalog p {
+    padding: 10px 25px 40px;
+    font-size: 0.9rem;
+}
+    
+.katalog .row .article .border {
+    padding: 20px;
+}
+    
+.katalog .row .cena span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 18px;
+    background: #fee340;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 0.8rem;
+}
+    
+.katalog .row .title h3 {
+    font-size: 1rem;
+} 
+    
+.katalog .row .teh span {
+font-size: 0.8rem;
+}    
+    
+.katalog .row .button {
+    font-size: 0.9rem;
+    margin: 7px 0 4px;
+    padding: 13px 15px 9px;
+
+}    
+
+.katalog .row .teh {
+    margin: 12px 0 4px;
+}    
+
+.konsult h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.konsult p {
+    padding: 10px 25px 50px;
+    font-size: 0.9rem;
+}
+ 
+ .konsult {
+    min-height: 350px;
+     margin-top: 50px;
+}   
+    
+.konsult .poddon img {
+    position: relative;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+} 
+
+.konsult .poddon {
+    bottom: -40%;
+}
+    
+.hous {
+    padding: 200px 0% 25px;
+}    
+    
+.hous h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.hous p {
+    padding: 10px 25px 30px;
+    font-size: 0.9rem;
+}
+ 
+.hous .slider .image {
+    height: 300px;
+    border-radius: 8px;
+}    
+    
+  
+.hous .slider span.low {
+    font-size: 0.9rem;
+    padding: 8px 0;
+} 
+    
+.hous .slider span.low::before {
+    content: '';
+    bottom: 6px;
+    width: 22px;
+    height: 22px;
+}
+    
+.hous .slider strong {
+    margin-left: 40px;
+}
+ 
+ .hous .slider a {
+    margin: 10px 0;
+    padding: 5px 0;
+}  
+    
+.hous .slider .description {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 45px 0px;
+}
+    
+.hous .slider a .desc {
+    padding: 3px 0px 8px;
+    font-size: 0.8rem;
+}
+    
+.hous .slider a .name {
+    font-size: 1rem;
+    padding: 8px 0 3px;
+}    
+
+.hous .slider .button {
+    margin-top: 25px;
+}
+    
+.hous .slider .button .sakas{    
+   padding: 15px 22px 12px;
+        font-size: 0.9rem;
+    }
+ .hous .slider .buttons-h {
+    padding: 10px;
+}   
+ 
+    
+.go {
+    height: 380px;
+}   
+    
+.sert .button {
+    padding: 25px 0;
+    margin-top: 0px
+}    
+  
+    
+.sert {
+    
+    padding: 30px 25px;
+    margin-top: 0px;
+}
+    
+.sert .pages {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0;
+}   
+
+    
+.go h1 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.go .description { 
+    padding: 20px 25px 25px;
+    font-size: 0.9em;
+}
+    
+.sert .content h2 {    
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+}
+    
+
+.sert .content p {    
+    padding: 10px 25px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h2 {
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+} 
+    
+.contact p {
+    padding: 15px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h3 {
+    font-size: 1rem;
+}
+  
+.contact span {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+}
+    
+.wtf {
+    bottom: -69%;
+}
+    
+.contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 25px;
+    height: 400px;
+    background: #fff;
+    float: left;
+    z-index: 9999999;
+}
+
+.contact .rec {
+    bottom: -35%;
+}
+    
+.contact .rec .lol {
+    font-size: 1.2rem;
+    color: #636363;
+    z-index: 9999999;
+    border-bottom: 2px dashed #636363;
+}
+    
+.map {
+    border-top: solid 160px #fff;
+    min-height: 400px;
+}
+ 
+    
+    
+iframe {
+    width: 140%;
+    margin-left: -10%;
+    height: 405px;
+}
+
+.popup_block .menu-pos {
+    padding: 25px;
+    min-height: 400px;
+}
+   
+.popup_block .menu-pos .form form .pe-inf p {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #cacaca;
+}   
+    
+.popup_block .menu-pos .form form .button .sakas {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 12px 30px 9px;
+    font-size: 0.9rem;
+}
+    
+.popup_block .menu-pos .form form .pe-inf {
+    bottom: 15px;
+}
+    
+.popup_block .menu-pos .form h2 {
+    font-size: 1.4rem;
+    padding: 15px 0 20px;
+}
+    
+.popup_block .menu-pos .form form input {
+
+    font-size: 0.8rem;
+    padding: 10px 42px 10px 5px;
+    border-radius: 5px;
+}  
+    
+.popup_block .menu-pos .form form {
+    padding: 15px 20%;
+}
+
+.popup_block .menu-pos .form a.close {
+    width: 42px;
+    height: 42px;
+    top: 10px;
+    right: 10px;
+    border: solid 2px #000;
+    z-index: 999999999;
+} 
+    
+    
+.popup_block .menu-pos .form a.close span {
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #000;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 18px;
+}
+
+    
+.popup_block .menu-pos .form a.close span::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+    
+}
+
+
+
+
+@media screen and (max-width:750px) {
+
+    
+header{
+    min-height: 360px;
+}   
+    
+nav {position: relative; display: block; width: 100%;  height: 65px; padding: 0 5%;}    
+    
+header .contacts {
+    height: 65px;
+    width: 80%;
+}    
+ 
+header .contacts .phone .mdl .mail {
+    font-size: 0.6rem;
+    padding: 3px 0;
+}  
+header .contacts .phone .mdl .tel {
+    font-size: 0.6rem;
+} 
+
+header .contacts .adr .icon i {
+    font-size: 1.8rem;
+    padding: 0 20px;
+}
+
+    
+    
+header .contacts .phone .mdl i.tels {
+    font-size: 1rem;
+     padding: 5px 8px;
+}    
+
+header .contacts .phone .mdl i.mails {
+    font-size: 1rem;
+    padding: 3px 12px 0 9px;
+}   
+    
+   
+    
+header .logo {
+    height: 65px;
+    width: 15%;
+}     
+    
+header .logo img {
+    width: 100%;
+} 
+    
+
+header .contacts .phone {
+    width: 30%;
+    z-index: 99999;
+}    
+    
+.button .sakas {
+    padding: 12px 20px 8px;
+
+}
+   
+ header .contacts .adr span {
+    line-height: 1.4;
+    font-size: 0.6rem;
+}   
+    
+header h1 {
+    font-size: 1.6rem;
+    padding: 35px 0 0;
+}
+    
+.button {
+    margin-top: 20px;
+}
+
+header .description {
+    font-size: 0.9rem;
+    padding: 7px 25px;
+}
+    
+.button .sakas {
+    font-size: 0.7rem;
+}    
+  
+
+header .bottom .reed span {
+    font-size: 0.8rem;
+}    
+
+header .bottom .reed i {
+    font-size: 1.8rem;
+    padding: 0px 25px 5px;
+    
+}  
+  
+    
+.wrapper {
+   padding: 20px 0 0;
+}    
+    
+.labels .label {
+    width: 49%;
+}   
+    
+.labels img {
+    width: 45%;
+    padding: 25px 25px 0;
+}   
+    
+    .labels .label::before {display: none;}    
+    
+.labels span {
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 0.9rem;
+}    
+    
+.labels {
+    padding: 4% 30px;
+}  
+    
+.katalog .row .article {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+   
+    
+.katalog .row .image {
+    position: relative;
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}    
+    
+katalog .row .teh {
+    margin: 20px 0 10px;
+}
+
+    .katalog .row .title {
+    height: 95px;
+    }
+
+.katalog {
+    padding: 25px 35px;
+}    
+    
+.katalog h2 {
+    font-size: 1.8rem;
+    padding: 45px 0 0;
+} 
+    
+.katalog p {
+    padding: 10px 25px 40px;
+    font-size: 0.9rem;
+}
+    
+.katalog .row .article .border {
+    padding: 20px;
+}
+    
+.katalog .row .cena span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 18px;
+    background: #fee340;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 0.8rem;
+}
+    
+.katalog .row .title h3 {
+    font-size: 1rem;
+} 
+    
+.katalog .row .teh span {
+font-size: 0.8rem;
+    
+}    
+    
+.katalog .row .button {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 13px 15px 9px;
+
+}    
+
+.katalog .row .teh {
+    margin: 12px 0 4px;
+}    
+
+.konsult h2 {
+    font-size: 1.8rem;
+    padding: 45px 0 0;
+} 
+    
+.konsult p {
+    padding: 10px 25px 30px;
+    font-size: 0.9rem;
+}
+ 
+ .konsult {
+    min-height: 310px;
+     margin-top: 30px;
+}   
+    
+.konsult .poddon img {
+    position: relative;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+} 
+
+.konsult .poddon {
+    bottom: -37%;
+}
+    
+.hous {
+    padding: 150px 0% 25px;
+}    
+ 
+
+.hous .slider .display {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    padding: 25px;
+}    
+    
+.hous h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.hous p {
+    padding: 10px 25px 30px;
+    font-size: 0.9rem;
+}
+ 
+.hous .slider .image {
+    height: 300px;
+    border-radius: 8px;
+}    
+    
+  
+.hous .slider span.low {
+    font-size: 0.9rem;
+    padding: 8px 0;
+    font-size: 0.6rem;
+} 
+    
+.hous .slider span.low::before {
+    content: '';
+    bottom: 6px;
+    width: 17px;
+    height: 17px;
+}
+    
+.hous .slider strong {
+    margin-left: 40px;
+}
+ 
+ .hous .slider a {
+    margin: 10px 0;
+    padding: 5px 0;
+}  
+    
+.hous .slider .description {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 45px 0px;
+}
+    
+.hous .slider a .desc {
+    padding: 3px 0px 8px;
+    font-size: 0.8rem;
+}
+    
+.hous .slider a .name {
+    font-size: 1rem;
+    padding: 8px 0 3px;
+}    
+
+.hous .slider .button {
+    margin-top: 25px;
+}
+    
+.hous .slider .button .sakas{    
+   padding: 15px 22px 12px;
+        font-size: 0.9rem;
+    }
+ .hous .slider .buttons-h {
+    padding: 10px 5px;
+}   
+ 
+    
+.go {
+    height: 380px;
+}   
+    
+.sert .button {
+    padding: 25px 0;
+    margin-top: 0px
+}    
+  
+    
+.sert {
+    
+    padding: 30px 25px;
+    margin-top: 0px;
+}
+    
+.sert .pages {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0;
+}   
+
+    
+.go h1 {
+    font-size: 2.2rem;
+    padding: 0;
+} 
+  
+.sert .pages .p-g {
+    position: relative;
+    display: inline-block;
+    float: left;
+    border: solid 7px #f5f4f4;
+    width: 25%;
+}    
+    
+.go .description { 
+    padding: 20px 25px 25px;
+    font-size: 0.9em;
+}
+    
+.sert .content h2 {    
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+}
+    
+.go .info {
+    padding: 0 8%;
+}
+    
+.sert .content p {    
+    padding: 10px 25px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h2 {
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+} 
+    
+.contact p {
+    padding: 15px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h3 {
+    font-size: 1rem;
+}
+  
+.contact span {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+}
+    
+.wtf {
+    display: none;
+}
+    
+.contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 25px;
+    height: 370px;
+    background: #fff;
+    float: left;
+    z-index: 9999999;
+}
+
+.contact .rec {
+    bottom: -35%;
+}
+    
+.contact .rec .lol {
+    font-size: 1.2rem;
+    color: #636363;
+    z-index: 9999999;
+    border-bottom: 2px dashed #636363;
+}
+    
+.map {
+    border-top: solid 160px #fff;
+    min-height: 340px;
+}
+ 
+    
+    
+iframe {
+    width: 140%;
+    margin-left: -8%;
+    height: 300px;
+}
+
+.popup_block .menu-pos {
+    padding: 0px;
+    min-height: 200px;
+    height: 100%;
+    
+}
+    
+.popup_block .menu-pos .form {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0px;
+    padding: 15px;
+}
+   
+.popup_block .menu-pos .form form label {
+    position: relative;
+    display: block;
+    padding: 18px 5px 8px;
+    float: left;
+    color: #636363;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-size: 0.85rem;
+}    
+    
+.popup_block .menu-pos .form form .pe-inf p {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #cacaca;
+}   
+    
+.popup_block .menu-pos .form form .button .sakas {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 12px 30px 9px;
+    font-size: 0.9rem;
+}
+    
+.popup_block .menu-pos .form form .pe-inf {
+    bottom: 15px;
+}
+    
+.popup_block .menu-pos .form h2 {
+    font-size: 1.4rem;
+    padding: 15px 0 0px;
+}
+    
+.popup_block .menu-pos .form form input {
+
+    font-size: 0.8rem;
+    padding: 10px 42px 10px 5px;
+    border-radius: 5px;
+}  
+    
+.popup_block .menu-pos .form form {
+    padding: 15px 20%;
+}
+
+.popup_block .menu-pos .form a.close {
+    width: 42px;
+    height: 42px;
+    top: 10px;
+    right: 10px;
+    border: solid 2px #000;
+    z-index: 999999999;
+} 
+    
+    
+.popup_block .menu-pos .form a.close span {
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #000;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 18px;
+}
+
+    
+.popup_block .menu-pos .form a.close span::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:550px) {
+
+    
+header{
+    min-height: 360px;
+}     
+    
+header .contacts {
+    height: 65px;
+    width: 80%;
+}    
+ 
+header .contacts .phone .mdl .mail {
+    font-size: 0.6rem;
+    padding: 3px 0;
+}  
+header .contacts .phone .mdl .tel {
+    font-size: 0.6rem;
+} 
+
+header .contacts .adr .icon i {
+    font-size: 1.8rem;
+    padding: 0 20px;
+}
+
+    
+    
+header .contacts .phone .mdl i.tels {
+    font-size: 1rem;
+     padding: 5px 8px;
+}    
+
+header .contacts .phone .mdl i.mails {
+    font-size: 1rem;
+    padding: 3px 12px 0 9px;
+}   
+    
+   
+    
+header .logo {
+    height: 65px;
+    width: 15%;
+}     
+    
+header .logo img {
+    width: 100%;
+} 
+    
+
+header .contacts .phone {
+    width: 38%;
+    z-index: 99999;
+}    
+    
+.button .sakas {
+    padding: 12px 20px 8px;
+
+}
+   
+ header .contacts .adr span {
+    line-height: 1.4;
+    font-size: 0.6rem;
+}   
+    
+header h1 {
+    font-size: 1.5rem;
+    padding: 35px 0 0;
+}
+    
+.button {
+    margin-top: 20px;
+    
+}
+header .description {
+    font-size: 0.9rem;
+    padding: 7px 25px;
+    line-height: 1.3;
+}
+    
+.button .sakas {
+    font-size: 0.7rem;
+}    
+  
+
+header .bottom .reed span {
+    font-size: 0.8rem;
+}    
+
+header .bottom .reed i {
+    font-size: 1.8rem;
+    padding: 0px 25px 5px;
+    
+}  
+  
+    
+.wrapper {
+   padding: 20px 0 0;
+}    
+    
+.labels .label {
+    width: 49%;
+}   
+    
+.labels img {
+    width: 45%;
+    padding: 25px 25px 0;
+}   
+    
+    .labels .label::before {display: none;}    
+    
+.labels span {
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 0.9rem;
+}    
+    
+.labels {
+    padding: 4% 30px;
+}  
+    
+.katalog .row .article {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+   
+    
+.katalog .row .image {
+    position: relative;
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}    
+    
+katalog .row .teh {
+    margin: 20px 0 10px;
+}
+   
+
+.katalog {
+    padding: 25px 35px;
+}    
+    
+.katalog h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.katalog p {
+    padding: 10px 25px 40px;
+    font-size: 0.9rem;
+}
+    
+.katalog .row .article .border {
+    padding: 10px;
+}
+    
+.katalog .row .cena span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 18px;
+    background: #fee340;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 0.8rem;
+}
+    
+.katalog .row .title h3 {
+    font-size: 1rem;
+} 
+    
+.katalog .row .teh span {
+font-size: 0.6rem;    
+}    
+    
+.katalog .row .button {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 13px 15px 9px;
+
+}    
+
+.katalog .row .teh {
+    margin: 12px 0 4px;
+}    
+
+.konsult h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.konsult p {
+    padding: 10px 25px 30px;
+    font-size: 0.9rem;
+}
+ 
+ .konsult {
+    min-height: 310px;
+     margin-top: 30px;
+}   
+    
+.konsult .poddon img {
+    position: relative;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+} 
+
+.konsult .poddon {
+    bottom: -27%;
+}
+    
+.hous {
+    padding: 90px 0% 25px;
+}    
+ 
+
+.hous .slider .display {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    padding: 25px;
+}    
+    
+.hous h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.hous p {
+    padding: 10px 25px 30px;
+    font-size: 0.9rem;
+}
+ 
+.hous .slider .image {
+    height: 285px;
+    border-radius: 8px;
+}    
+    
+  
+.hous .slider span.low {
+    font-size: 0.9rem;
+    padding: 8px 0;
+    font-size: 0.6rem;
+} 
+    
+.hous .slider span.low::before {
+    content: '';
+    bottom: 6px;
+    width: 17px;
+    height: 17px;
+}
+    
+.hous .slider strong {
+    margin-left: 40px;
+}
+ 
+ .hous .slider a {
+    margin: 10px 0;
+    padding: 5px 0;
+}  
+    
+.hous .slider .description {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 45px 0px;
+}
+    
+.hous .slider a .desc {
+    padding: 3px 0px 8px;
+    font-size: 0.7rem;
+}
+    
+.hous .slider a .name {
+    font-size: 0.9rem;
+    padding: 8px 0 3px;
+}    
+
+.hous .slider .button {
+    margin-top: 25px;
+}
+    
+.hous .slider .button .sakas{    
+   padding: 15px 22px 12px;
+        font-size: 0.9rem;
+    }
+ .hous .slider .buttons-h {
+    padding: 10px 5px;
+}   
+ 
+    
+.go {
+    height: 380px;
+}   
+    
+.sert .button {
+    padding: 25px 0;
+    margin-top: 0px
+}    
+  
+    
+.sert {
+    
+    padding: 30px 25px;
+    margin-top: 0px;
+}
+    
+.sert .pages {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0;
+}   
+
+    
+.go h1 {
+    font-size: 1.8rem;
+    padding: 0;
+} 
+  
+.sert .pages .p-g {
+    position: relative;
+    display: inline-block;
+    float: left;
+    border: solid 7px #f5f4f4;
+    width: 25%;
+}    
+    
+.go .description { 
+    padding: 20px 25px 25px;
+    font-size: 0.9em;
+}
+    
+.sert .content h2 {    
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+}
+    
+.go .info {
+    padding: 0 8%;
+}
+    
+.sert .content p {    
+    padding: 10px 25px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h2 {
+    font-size: 2.8rem;
+    padding: 45px 0 0;
+} 
+    
+.contact p {
+    padding: 15px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h3 {
+    font-size: 1rem;
+}
+  
+.contact span {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+}
+    
+.wtf {
+    display: none;
+}
+    
+.contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 25px;
+    height: 370px;
+    background: #fff;
+    float: left;
+    z-index: 9999999;
+}
+
+.contact .rec {
+    bottom: -35%;
+}
+    
+.contact .rec .lol {
+    font-size: 1.2rem;
+    color: #636363;
+    z-index: 9999999;
+    border-bottom: 2px dashed #636363;
+}
+    
+.map {
+    border-top: solid 160px #fff;
+    min-height: 340px;
+}
+ 
+    
+    
+iframe {
+    width: 140%;
+    margin-left: -8%;
+    height: 260px;
+}
+
+.popup_block .menu-pos {
+    padding: 0px;
+    min-height: 200px;
+    height: 100%;
+    
+}
+    
+.popup_block .menu-pos .form {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0px;
+    padding: 15px;
+}
+   
+.popup_block .menu-pos .form form label {
+    position: relative;
+    display: block;
+    padding: 18px 5px 8px;
+    float: left;
+    color: #636363;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-size: 0.85rem;
+}    
+    
+.popup_block .menu-pos .form form .pe-inf p {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #cacaca;
+}   
+    
+.popup_block .menu-pos .form form .button .sakas {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 12px 30px 9px;
+    font-size: 0.9rem;
+}
+    
+.popup_block .menu-pos .form form .pe-inf {
+    bottom: 15px;
+}
+    
+.popup_block .menu-pos .form h2 {
+    font-size: 1.4rem;
+    padding: 15px 0 0px;
+}
+    
+.popup_block .menu-pos .form form input {
+
+    font-size: 0.8rem;
+    padding: 10px 42px 10px 5px;
+    border-radius: 5px;
+}  
+    
+.popup_block .menu-pos .form form {
+    padding: 15px 20%;
+}
+
+.popup_block .menu-pos .form a.close {
+    width: 42px;
+    height: 42px;
+    top: 10px;
+    right: 10px;
+    border: solid 2px #000;
+    z-index: 999999999;
+} 
+    
+    
+.popup_block .menu-pos .form a.close span {
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #000;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 18px;
+}
+
+    
+.popup_block .menu-pos .form a.close span::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+    
+}
+
+
+
+
+@media screen and (max-width:490px) {
+
+    
+header{
+    min-height: 400px;
+}     
+    
+header .contacts {
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+}    
+ 
+header .contacts .phone .mdl .mail {
+    font-size: 0.6rem;
+    padding: 3px 0;
+}  
+header .contacts .phone .mdl .tel {
+    font-size: 0.6rem;
+} 
+
+header .contacts .adr .icon i {
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+    
+    
+header .contacts .phone .mdl i.tels {
+    font-size: 0.9rem;
+     padding: 5px 8px 5px 16px;
+}    
+
+header .contacts .phone .mdl i.mails {
+    font-size: 0.9rem;
+    padding: 3px 6px 0 15px;
+}   
+    
+header .info {
+
+    padding: 0 20px;
+}   
+
+   h1 br {display: none;}    
+    
+header .logo {
+    height: 50px;
+    width: 100%;
+}     
+    
+header .logo img {
+    width: 30%;
+    margin: 0 auto;
+    height: auto;
+} 
+    
+
+header .contacts .phone {
+    width: 50%;
+    z-index: 99999;
+}    
+    
+.button .sakas {
+    padding: 12px 20px 8px;
+
+}
+   
+ header .contacts .adr span {
+    line-height: 1.4;
+    font-size: 0.48rem;
+}   
+    
+header h1 {
+    font-size: 1.5rem;
+    padding: 35px 0 0;
+}
+    
+.button {
+    margin-top: 20px;
+    
+}
+header .description {
+    font-size: 0.9rem;
+    padding: 7px 25px;
+    line-height: 1.3;
+}
+    
+.button .sakas {
+    font-size: 0.7rem;
+}    
+  
+
+header .bottom .reed span {
+    font-size: 0.8rem;
+}    
+
+header .bottom .reed i {
+    font-size: 1.8rem;
+    padding: 0px 25px 5px;
+    
+}  
+  
+    
+.wrapper {
+   padding: 20px 0 0;
+}    
+    
+.labels .label {
+    width: 100%;
+}   
+    
+.labels img {
+    width: 70%;
+    padding: 25px 25px 0;
+}   
+    
+    .labels .label::before {display: none;}    
+    
+.labels span {
+    padding: 20px;
+    line-height: 1.3;
+    font-size: 0.9rem;
+}    
+    
+.labels {
+    padding: 4% 30px;
+}  
+    
+.katalog .row .article {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+   
+    
+.katalog .row .image {
+    position: relative;
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}    
+    
+katalog .row .teh {
+    margin: 20px 0 10px;
+}
+   
+
+.katalog {
+    padding: 25px;
+}    
+    
+.katalog h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.katalog p {
+    padding: 10px 25px 40px;
+    font-size: 0.9rem;
+}
+    
+.katalog .row .article .border {
+    padding: 10px;
+}
+    
+.katalog .row .cena span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 18px;
+    background: #fee340;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 0.8rem;
+}
+    
+.katalog .row .title h3 {
+    font-size: 1rem;
+} 
+    
+.katalog .row .teh span {
+font-size: 0.6rem;    
+}    
+    
+.katalog .row .button {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 13px 15px 9px;
+
+}    
+
+.katalog .row .teh {
+    margin: 12px 0 4px;
+}    
+
+.konsult h2 {
+    font-size: 1.8rem;
+    padding: 45px 0 0;
+} 
+    
+.konsult p {
+    padding: 10px 10px 30px;
+    font-size: 0.9rem;
+}
+ 
+ .konsult {
+    min-height: 310px;
+     margin-top: 30px;
+}   
+    
+.konsult .poddon img {
+    position: relative;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+} 
+
+.konsult .poddon {
+   display: none;
+}
+    
+.hous {
+    padding: 90px 0% 25px;
+}    
+ 
+
+.hous .slider .display {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0 25px;
+}    
+    
+.hous h2 {
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+} 
+    
+.hous p {
+    padding: 10px 25px 30px;
+    font-size: 0.9rem;
+}
+ 
+.hous .slider .image {
+    height: 285px;
+    border-radius: 8px;
+}    
+    
+  
+.hous .slider span.low {
+    font-size: 0.9rem;
+    padding: 8px 0;
+    font-size: 0.6rem;
+} 
+    
+.hous .slider span.low::before {
+    content: '';
+    bottom: 6px;
+    width: 17px;
+    height: 17px;
+}
+    
+.hous .slider strong {
+    margin-left: 40px;
+}
+ 
+ .hous .slider a {
+    margin: 10px 0;
+    padding: 5px 0;
+}  
+    
+.hous .slider .description {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 45px 0px;
+}
+    
+.hous .slider a .desc {
+    padding: 3px 0px 8px;
+    font-size: 0.7rem;
+}
+    
+.hous .slider a .name {
+    font-size: 0.9rem;
+    padding: 8px 0 3px;
+}    
+
+.hous .slider .button {
+    margin-top: 25px;
+}
+    
+.hous .slider .button .sakas{    
+   padding: 15px 22px 12px;
+        font-size: 0.9rem;
+    }
+ .hous .slider .buttons-h {
+    padding: 10px 5px;
+     width: 100%;
+}   
+ 
+    
+.go {
+    height: 380px;
+}   
+    
+.sert .button {
+    padding: 25px 0;
+    margin-top: 0px
+}    
+  
+    
+.sert {
+    
+    padding: 30px 25px;
+    margin-top: 0px;
+}
+    
+.sert .pages {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0;
+}   
+
+    
+.go h1 {
+    font-size: 1.8rem;
+    padding: 0;
+} 
+  
+.sert .pages .p-g {
+    position: relative;
+    display: inline-block;
+    float: left;
+    border: solid 7px #f5f4f4;
+    width: 25%;
+}    
+    
+.go .description { 
+    padding: 20px 25px 25px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+    
+.sert .content h2 {    
+    font-size: 2.2rem;
+    padding: 45px 0 0;
+}
+    
+.go .info {
+    padding: 0 8%;
+}
+    
+.sert .content p {    
+    padding: 10px 25px 25px;
+    font-size: 0.9rem;
+} 
+    
+.contact h2 {
+    font-size: 1.8rem;
+    padding: 10px 0 0;
+
+} 
+    
+.contact p {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+} 
+    
+.contact h3 {
+    font-size: 1rem;
+}
+  
+.contact span {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+    line-height: 1.4;
+}
+    
+.wtf {
+    display: none;
+}
+    
+.contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 25px;
+    height: auto;
+    background: #fff;
+    float: left;
+    z-index: 9999999;
+}
+
+.contact .rec {
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+    
+.contact .rec .lol {
+    font-size: 1.2rem;
+    color: #636363;
+    z-index: 9999999;
+    border-bottom: 2px dashed #636363;
+}
+    
+.map {
+    display: none;
+    border-top: solid 160px #fff;
+    min-height: 340px;
+}
+ 
+    
+    
+iframe {
+    width: 140%;
+    margin-left: -8%;
+    height: 260px;
+}
+
+.popup_block .menu-pos {
+    padding: 0px;
+    min-height: 200px;
+    height: 100%;
+    
+}
+    
+.popup_block .menu-pos .form {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0px;
+    padding: 15px;
+}
+   
+.popup_block .menu-pos .form form label {
+    position: relative;
+    display: block;
+    padding: 18px 5px 8px;
+    float: left;
+    color: #636363;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-size: 0.85rem;
+}    
+    
+.popup_block .menu-pos .form form .pe-inf p {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #cacaca;
+    padding: 25px;
+}   
+    
+.popup_block .menu-pos .form form .button .sakas {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 12px 30px 9px;
+    font-size: 0.9rem;
+}
+    
+.popup_block .menu-pos .form form .pe-inf {
+    bottom: 15px;
+}
+    
+.popup_block .menu-pos .form h2 {
+    font-size: 1.4rem;
+    padding: 15px 0 0px;
+}
+    
+.popup_block .menu-pos .form form input {
+
+    font-size: 0.8rem;
+    padding: 10px 42px 10px 5px;
+    border-radius: 5px;
+}  
+    
+.popup_block .menu-pos .form form {
+    padding:16%;
+}
+
+.popup_block .menu-pos .form a.close {
+    width: 42px;
+    height: 42px;
+    top: 10px;
+    right: 10px;
+    border: solid 2px #000;
+    z-index: 999999999;
+} 
+    
+    
+.popup_block .menu-pos .form a.close span {
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #000;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 18px;
+}
+
+    
+.popup_block .menu-pos .form a.close span::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+    
+}
+
+
+
+   
+@media screen and (max-width: 1110px) and (min-width: 1030px){
+.wtf {
+    bottom: -80%;
+        }    }
+
+
+@media screen and (min-width:2100px) and (max-width:2800px)   {
+
+    
+ 
+    
+    
+header .contacts .phone .mdl i.tels {
+    font-size: 2.3rem;
+    display: table-cell;
+    vertical-align: bottom;
+    color: #e43636;
+    padding: 5px;
+}
+    
+header .contacts .phone .mdl i.mails {
+    font-size: 2.3rem;
+    display: table-cell;
+    vertical-align: top;
+    color: #e43636;
+    padding: 5px;
+}    
+    
+    
+header .contacts .phone .mdl .tel {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    line-height: 1.4;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 6px;
+}    
+
+    
+header .contacts .phone .mdl .mail {
+    position: relative;
+    display: table-cell;
+    vertical-align: top;
+    line-height: 1.4;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 6px 0;
+}    
+    
+
+header .contacts .adr span {
+    font-size: 1.3rem;
+
+}    
+    
+    
+header .logo img {
+    position: relative;
+    display: block;
+    margin: 0px;
+    width: 120%;
+}    
+    
+.contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 25px;
+    height: 520px;
+    background: #fff;
+    float: left;
+    z-index: 9999999;
+    }
+
+.wtf {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0px;
+    bottom: -120%;
+    z-index: 999999;
+}
+ 
+.popup_block .menu-pos .form form input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    font-size: 1.5rem;
+    padding: 18px 43px 17px 20px;
+    border: solid 1px #ebebeb;
+    margin: 0px;
+    border-radius: 5px;
+}   
+    
+.popup_block .menu-pos .form h2 {
+    position: relative;
+    display: block;
+    line-height: 1;
+    color: #000;
+    font-family: 'DINNextCYR-Heavy';
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 15px 0 40px;
+} 
+    
+
+.popup_block .menu-pos .form form label {
+    position: relative;
+    display: block;
+    padding: 25px 5px 15px;
+    float: left;
+    color: #636363;
+    font-family: 'proxima_nova_rgregular', sans-serif;
+    font-size: 2rem;
+}    
+
+.popup_block .menu-pos .form form {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    padding: 75px 17%;
+    height: 100%;
+    width: 100%;
+} 
+    
+    
+.popup_block .menu-pos {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 14.5% 36%;
+    min-height: 900px;
+}    
+}
+
