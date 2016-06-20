@@ -1,18 +1,18 @@
  $(document).ready(function() {
-   var homesl = 0; teesersl = 0; salesl = 0; intro = 18000;
+   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000;
      
-  
-     
-  // Action for NEXT SLIDE. Used by Next and animation
-  $.fn.nextSlide = function() {
-if (homesl == 0) 
+  var cycleTimer;
+
+function startCycle() {
+   cycleTimer = setInterval(function () {
+      if (homesl == 0) 
                   {
      
                   $('#home-info2').fadeIn(300);
                   $('#home-info1').fadeOut(300);
                   $('a.n-r').addClass('active');
                   $('a.n-l').removeClass('active');
-                  homesl = 1;     
+                  homesl = 1; 
                   } else { 
                   if (homesl == 1) 
                   {   
@@ -20,7 +20,7 @@ if (homesl == 0)
                   $('#home-info2').fadeOut(300);
                   $('a.n-l').addClass('active');
                   $('a.n-r').removeClass('active');
-                  homesl = 0; }}
+                  homesl = 0;  }}
     
     
     
@@ -46,10 +46,18 @@ if (homesl == 0)
         } }}
     
     
-    
-  }     
+   }, 8000);
+}
+
+// start to automatically cycle slides
+startCycle();
      
-  var timerId = setInterval($.fn.nextSlide, 6000);
+   
+     
+function stopCycle() {
+   clearInterval(cycleTimer);
+   startCycle().delay(8000);
+}
 
 
      
@@ -60,6 +68,8 @@ if (homesl == 0)
                   $('a.n-l').addClass('active');
                   $('a.n-r').removeClass('active');
                   homesl = 0;
+                  stopCycle();
+                  
           });   
                $('a.n-r').click(function() {
                   $('#home-info2').fadeIn(300);
@@ -67,6 +77,7 @@ if (homesl == 0)
                   $('a.n-r').addClass('active');
                   $('a.n-l').removeClass('active');
                   homesl = 1;
+                  stopCycle()
           });  
      
      
@@ -81,68 +92,58 @@ if (homesl == 0)
    $('a.teeser-right').click(function() {
        
 
+   
        
        if (teesersl == 0) {
            
            $('#teeser2').fadeIn(300);
            $('#teeser1').fadeOut(300);
            teesersl = 1;
-           clearInterval(timerId);
-           setTimeout(function() {
-    setInterval($.fn.nextSlide, 6000);
-  }, 6000);
+           stopCycle();
+
        } else {
        if (teesersl == 1) {   
            $('#teeser3').fadeIn(300);
            $('#teeser2').fadeOut(300);
            teesersl = 2;
-           clearInterval(timerId);
-           setTimeout(function() {
-    setInterval($.fn.nextSlide, 6000);
-  }, 6000);
+           stopCycle();
+
            } else{ if (teesersl == 2) {
                
            $('#teeser1').fadeIn(300);
            $('#teeser3').fadeOut(300);
            teesersl = 0;
-           clearInterval(timerId); 
-           setTimeout(function() {
-    setInterval($.fn.nextSlide, 6000);
-  }, 6000);
+           stopCycle();
+
                
         } }}}); 
 
 
    $('a.teeser-left').click(function() {
        
-
+    stopCycle();
        
        if (teesersl == 0) {
            
            $('#teeser3').fadeIn(300);
            $('#teeser1').fadeOut(300);
            teesersl = 2;
-           clearInterval(timerId);
-           setTimeout(function() {
-    setInterval($.fn.nextSlide, 6000);
-  }, 6000);
+           stopCycle();
+
        } else {
        if (teesersl == 1) {   
            $('#teeser1').fadeIn(300);
            $('#teeser2').fadeOut(300);
            teesersl = 0;
-           clearInterval(timerId);
-           setTimeout(function() {
-    setInterval($.fn.nextSlide, 6000);
-  }, 6000);
+           stopCycle();
+
            } else{ if (teesersl == 2) {
                
            $('#teeser2').fadeIn(300);
            $('#teeser3').fadeOut(300);
            teesersl = 1;
-           setTimeout(function() {
-    setInterval($.fn.nextSlide, 6000);
-  }, 6000);    
+           stopCycle();
+   
                
                
         } }}}); 
@@ -162,6 +163,7 @@ $('a.s-l').click(function() {
            $('#sale-p3').addClass('active');
            salesl = 2;
            
+           
        } else {
        if (salesl == 1) {   
            $('#sale-1').fadeIn(1500);
@@ -169,10 +171,7 @@ $('a.s-l').click(function() {
            $('#sale-p2').removeClass('active');
            $('#sale-p1').addClass('active');
            salesl = 0;
-           clearInterval(timerId);
-           setTimeout(function() {
-           setInterval($.fn.nextSlide, 6000);
-           }, 6000);
+
            } else{ if (salesl == 2) {
                
            $('#sale-2').fadeIn(1500);
