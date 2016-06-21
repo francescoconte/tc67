@@ -1,5 +1,54 @@
  $(document).ready(function() {
-   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000;
+   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0;
+     
+   
+     
+  $(window).scroll(function() {
+if ($(this).scrollTop() > (550)){  
+    $('#hamb').fadeIn();
+
+  }
+  else{
+    $('#hamb').fadeOut();
+
+  }
+});   
+     
+     
+     
+           $('#hamb').click(function() {
+            
+              if ( click ==0 ) 
+              {
+             $('.hamburger--squeeze').addClass('is-active');
+             $('#fade').fadeIn();
+             $('#mbile-web').fadeIn();
+             $('#hamb').addClass('close');
+             $("body").css("overflow","hidden");  
+              click = 1;
+              }
+              
+              else { if ( click == 1 )  {
+                  
+              {
+               
+             $('.hamburger--squeeze').removeClass('is-active');
+             $('#fade').fadeOut();
+             $('#mbile-web').fadeOut();
+             $('#hamb').removeClass('close');      
+               click = 0;
+              }    
+                  
+              }}
+
+    
+
+
+          });      
+     
+     
+     
+     
      
   var cycleTimer;
 
@@ -268,6 +317,6 @@ $(window).scroll(function () {
 });
 
 
-
+ 
 
          
