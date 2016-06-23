@@ -62,7 +62,7 @@ fade{display:none;background:#252525;position:fixed;left:0;top:0;width:100%;heig
 .popup_block .menu-pos{position:absolute;display:table;width:100%;height:100%;z-index:111111;}
 .popup_block .menu-pos .menu{display:table-cell;vertical-align:middle;margin:0 auto;box-sizing:border-box;padding:25px;}
 .popup_block .menu-pos li{padding:10px;color:#fff;letter-spacing:2px;text-align:left;}
-.popup_block .menu-pos a{color:#fff;font-size:24px; box-sizing:border-box;padding:0 50px;text-transform:uppercase;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s; font-family: @fontH;}
+.popup_block .menu-pos a{color:#fff;font-size:55px; box-sizing:border-box;padding:0 50px;text-transform:uppercase;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s; font-family: @fontH;}
 .popup_block .menu-pos a:hover{color:@colfirm2;}
 
 
@@ -243,7 +243,27 @@ p {color: #fff; padding: 13px;  text-align: center; font-size: 16px;}
   
 .a-table {position: relative; display: block; float: left; width: 100%; height: 100%;
 h2 {text-align: center; padding: 0 25px 55px;}
-.one {position: relative; display: inline-table; float: left; width: 50%; height: 400px;  
+.one {position: relative; display: inline-table; float: left; width: 50%; height: 400px; 
+    
+.abs {position: absolute; display: none; top: 0px; left:0px; width: 100%; height: 100%;}
+.abs-ll {position: absolute; display: table; top: 0px; left:0px; width: 100%; height: 100%;}
+.ph-abs {position: absolute; display: none; top: 0px; left:0px; width: 100%; height: 100%;
+    
+   .phbg-tranlslate {position: relative; display: table-cell; vertical-align: middle;
+h3 {position: relative; display: block; text-align: center; color: @colfirm2; font-family: @fontB; font-size: 42px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 2px;} 
+span.description {position: relative; display: block; text-align: center; color: #fff; font-family: @fontH; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;}   
+} 
+    
+    
+    }  #abs1-ph1  {display: block}
+    
+      
+    
+    
+    
+    
+    
+    
 .top-info {position: relative; display: block; width: 100%; padding: 32px 20px 40px; border-top: solid 8px #fff; 
     border-left: solid 8px #fff; border-right: solid 8px #fff;
   background-image: -moz-linear-gradient( -90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);
@@ -282,8 +302,20 @@ span {position: relative; display: table-cell; vertical-align: middle; color: #f
 }
     
 .image {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px; overflow: hidden; border: solid 8px #fff; 
-.phbg {position: absolute; display: block; top: 0px; left: 0px; background: #000; opacity: .10; width: 100%; height: 100%; 
-    -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out;}    
+.phbg {position: absolute; display: table; top: 0px; left: 0px; background: #000; opacity: .10; width: 100%; height: 100%; 
+    -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out;
+    
+    
+  
+    
+    
+}  
+    
+    
+    
+    
+    
+    
 .one-info {position: absolute; display: block; top: 0px; left: 0px; padding: 16px;}
         
 .sc-image {position: absolute; display: block; width: 101%; height: 101%; top: -0.5%; left: -0.5%;
@@ -336,75 +368,55 @@ li {position: relative; display:inline-block; width: 8px; height: 8px; backgroun
 
 
 .home-news {position: relative; display: block; width: 100%; padding: 80px 0 72px; float:left;
-    h2 {text-align: center; margin-bottom: 60px;}
-        .news-blog {position: relative; display: block; width: 100%;}    
-        .news-post {position: relative; display: inline-block; float: left; width: 33.33%; padding-left: 100px; padding-right: 50px; padding-bottom: 60px;}
-    h3 {position: relative; display: block} 
-        .news-data {position: relative; display: block; color: #797979; font-size: 12px; margin-bottom: 15px;} 
-    
-    
-  
-    
+h2 {text-align: center; margin-bottom: 60px;}
+.news-blog {position: relative; display: block; width: 100%;}    
+.news-post {position: relative; display: inline-block; float: left; width: 33.33%; padding-left: 100px; padding-right: 50px; padding-bottom: 60px;}
+h3 {position: relative; display: block} 
+.news-data {position: relative; display: block; color: #797979; font-size: 12px; margin-bottom: 15px;} 
 }
 
 
 footer {position: relative; display: block; float: left; width: 100%; min-height: 600px; padding: 30px 0; background: @coltxt;
-
-    .f-block-tx {position: relative; display: inline-block; float: left; width: 22%;  
-        h4 {font-family: @fonttxt; font-weight: 300; color: #fff; font-size: 18px; padding: 35px 0px 10px; height: 85px;} 
-        ul {position: relative; display: block; min-height: 68px;
-            a {color: #828282; font-size: 16px; display: block; padding: 7px 0;
-                &:hover{color: #fff;}}
-            li {position: relative; display: block; float: left; width: 100%;
-                img {position: relative; display: inline; width: auto; margin: 0 auto; padding: 5px 0; float: left;}
-            }
-        }
-        
-        
-        
-    } .a-left {width: 300px;} .b-left {width: 350px;} .a-right {width: 320px} .b-right {width: 240px}
-
-
-    .foot-info {position: relative; display: block; float: left; width: 100%; padding: 35px 0px 0; margin-top: 40px; border-top: solid 1px #3f3f3f;
+.f-block-tx {position: relative; display: inline-block; float: left; width: 22%;  
+h4 {font-family: @fonttxt; font-weight: 300; color: #fff; font-size: 18px; padding: 35px 0px 10px; height: 85px;} 
+ul {position: relative; display: block; min-height: 68px;
+a {color: #828282; font-size: 16px; display: block; padding: 7px 0;
+&:hover{color: #fff;}}
+li {position: relative; display: block; float: left; width: 100%;
+img {position: relative; display: inline; width: auto; margin: 0 auto; padding: 5px 0; float: left;}
+}}} 
     
-        .logo-block { float: left; width: 540px;
+.a-left {width: 300px;} .b-left {width: 350px;} .a-right {width: 320px} .b-right {width: 240px}
+.foot-info {position: relative; display: block; float: left; width: 100%; padding: 35px 0px 0; margin-top: 40px; border-top: solid 1px #3f3f3f;
+.logo-block { float: left; width: 540px;
+.logo {font-size: 0px; width: 98px; height: 30px; }
+span {font-size: 14px; height: 98px;     padding: 25px 20px 21px;}
+.copy-des {padding: 0px; a{position: relative; display: block; float: left; width: 100%;padding: 0px; color: #828282; font-size: 12px;} }}
+.linked-block {position: relative; display: inline-block; float:left; width: 425px;     padding: 15px 0;
+.social {position: relative; display: inline-block; float: left; 
+.link {position: relative; display: inline-block; float: left; padding: 8px 15px 0 20px; text-align: center;
+i {font-size: 25px; color: #fff; .m-speed;}
+} .link:hover {i {color: @colfirm2;}}}
+        
+.phone-block-f {position: relative; display: inline-block; float: left; padding:5px 0 0 45px;
+font-family: @fonttxt; font-weight: 300; color: #fff; font-size: 24px;
+}
+}
+.end-block {position: relative; display: inline-block; float:right; width: 240px;   padding: 5px 0;
+.button {border: solid 2px @colfirm; margin:0px; float: right;  }   
+.cv-blue {border-radius: 0px; background:transparent; color:@colfirm2;  border: solid 2px @colfirm2; span {color:@colfirm2}}
+.button:hover {border: solid 2px #0dc652;  span {color:#fff}}
+.cv-blue:hover {border-radius: 0px; background:@colfirm2;  border: solid 2px @colfirm2; color:#fff; span {color:#fff}}
+.parus {position: relative; display: block; float: right; font-family: @fontH; color: #797979;  font-size: 16px; padding-top: 35px;
+a {color: #fff;
+&:hover{ color:@colfirm;
+}}}
+}    
+}}
 
-            .logo {font-size: 0px; width: 98px; height: 30px; }
-            span {font-size: 14px; height: 98px;     padding: 25px 20px 21px;}
-            .copy-des {padding: 0px; a{position: relative; display: block; float: left; width: 100%;padding: 0px; color: #828282; font-size: 12px;} }}
-        
-        .linked-block {position: relative; display: inline-block; float:left; width: 425px;     padding: 15px 0;
-            .social {position: relative; display: inline-block; float: left; 
-                .link {position: relative; display: inline-block; float: left; padding: 8px 15px 0 20px; text-align: center;
-                    i {font-size: 25px; color: #fff; .m-speed;}
-                } .link:hover {i {color: @colfirm2;}}}
-        
-            .phone-block-f {position: relative; display: inline-block; float: left; padding:5px 0 0 45px;
-            font-family: @fonttxt; font-weight: 300; color: #fff; font-size: 24px;
-            }
-        
-        }
-        
-        
-        .end-block {position: relative; display: inline-block; float:right; width: 240px;   padding: 5px 0;
-        
-              .button {border: solid 2px @colfirm; margin:0px; float: right;  }   
-        .cv-blue {border-radius: 0px; background:transparent; color:@colfirm2;  border: solid 2px @colfirm2; span {color:@colfirm2}}
-        
-        .button:hover {border: solid 2px #0dc652;  span {color:#fff}}
-        .cv-blue:hover {border-radius: 0px; background:@colfirm2;  border: solid 2px @colfirm2; color:#fff; span {color:#fff}}
 
-            .parus {position: relative; display: block; float: right; font-family: @fontH; color: #797979;  font-size: 16px; padding-top: 35px;
-                a {color: #fff;
-                    &:hover{ color:@colfirm;
-                    }
-                }
-            }
-    
-    }    
-    
-    
-    }}
+
+
 
 
 

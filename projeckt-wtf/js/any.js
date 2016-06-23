@@ -1,10 +1,77 @@
  $(document).ready(function() {
-   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0;
+   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0; tcsl = 0;
      
-   
+  
+     
+     
+ // слайдер в блоке тц
+
+
+var tcTimer;
+
+function startTc() {
+   tcTimer = setInterval(function () {
+
+    
+    
+    
+       if (tcsl == 0) {
+           $('#abs1-ph1').delay( 2000 ).fadeOut(); 
+           $('#abs1-ph3').delay( 2000 ).fadeOut();
+           $('#abs1-ph2').delay( 2500 ).fadeIn();
+           tcsl = 1;
+           
+       } else { if (tcsl == 1) {   
+           $('#abs1-ph1').delay( 2000 ).fadeOut();  
+           $('#abs1-ph2').delay( 2000 ).fadeOut();         
+           $('#abs1-ph3').delay( 2500 ).fadeIn();
+           tcsl = 2;
+           } else{ if (tcsl == 2) {
+           $('#abs1-ph2').delay( 2000 ).fadeOut();    
+           $('#abs1-ph3').delay( 2000 ).fadeOut();               
+           $('#abs1-ph1').delay( 2500 ).fadeIn();
+           tcsl = 0;
+               
+               
+        } }}
+    
+    
+   }, 2500);
+}
+
+
+
+
+$("#tc1").hover(
+  function () {
+    $('#abs1').delay(1000).fadeIn();
+    // start to automatically cycle slides
+    startTc(); 
+      
+  },
+  function () {
+    $('#abs1').delay(100).fadeOut();
+  }
+);     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
   $(window).scroll(function() {
-if ($(this).scrollTop() > (550)){  
+if ($(this).scrollTop() > (750)){  
     $('#hamb').fadeIn();
 
   }
@@ -46,7 +113,35 @@ if ($(this).scrollTop() > (550)){
 
           });      
      
-     
+             $('#hamb-mobile').click(function() {
+            
+              if ( click ==0 ) 
+              {
+             $('.hamburger--squeeze').addClass('is-active');
+             $('#fade').fadeIn();
+             $('#mbile-web').fadeIn();
+             $('#hamb').addClass('close');
+             $("body").css("overflow","hidden");  
+              click = 1;
+              }
+              
+              else { if ( click == 1 )  {
+                  
+              {
+               
+             $('.hamburger--squeeze').removeClass('is-active');
+             $('#fade').fadeOut();
+             $('#mbile-web').fadeOut();
+             $('#hamb').removeClass('close');      
+               click = 0;
+              }    
+                  
+              }}
+
+    
+
+
+          });     
      
      
      
@@ -105,7 +200,7 @@ startCycle();
      
 function stopCycle() {
    clearInterval(cycleTimer);
-   startCycle().delay(8000);
+   startCycle();
 }
 
 
@@ -302,7 +397,17 @@ $('a.s-l').click(function() {
         } ); 
      
  
-});  
+
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ });  
 
 
 $(window).scroll(function () {
@@ -317,6 +422,33 @@ $(window).scroll(function () {
 });
 
 
- 
 
-         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
