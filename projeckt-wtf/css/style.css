@@ -397,6 +397,12 @@ progress[value]::-webkit-progress-value {
 }
 
 
+header .phbgh {
+    position: fixed;
+    display: none;
+    height: 0px;
+
+}
 
 fade {
   display: none;
@@ -469,7 +475,7 @@ fade {
 }
 
 nav .logo-block {
-    position: fixed;
+    position: relative;
     left:12px;
     top: 0px;
     display: inline-block;
@@ -3218,7 +3224,15 @@ nav .logo-block {
     display: inline-block;
     float: left;
     height: 50px;
-}    
+} 
+    
+nav .logo-block {
+    position: fixed;
+    left: 12px;
+    top: 0px;
+    display: inline-block;
+    float: left;
+}
     
 }
 
