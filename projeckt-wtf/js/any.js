@@ -51,6 +51,7 @@ $("#tc1").hover(
   },
   function () {
     $('#abs1').delay(100).fadeOut();
+      clearInterval(tcTimer);
   }
 );     
      

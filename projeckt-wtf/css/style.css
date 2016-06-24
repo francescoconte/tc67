@@ -3233,7 +3233,12 @@ nav .logo-block {
     display: inline-block;
     float: left;
 }
-    
+  
+
+header .phbgh {
+    display: block;
+    height: 50px;
+}
 }
 
 
