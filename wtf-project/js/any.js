@@ -4,15 +4,14 @@
   
      
      
+$(function(){
 
-     
-     
-     
-     
-     
-     
-     
-     
+$('#hamb-t').on('click', function(e){
+  $('html,body').stop().animate({ scrollTop: $('#home').offset().top }, 1000);
+  e.preventDefault();
+});
+
+});
      
      
      
@@ -25,6 +24,16 @@ if ($(this).scrollTop() > (750)){
   }
   else{
     $('#hamb').fadeOut();
+
+  }
+      
+      
+if ($(this).scrollTop() > (2550)){  
+    $('#hamb-t').fadeIn();
+
+  }
+  else{
+    $('#hamb-t').fadeOut();
 
   }
 });   

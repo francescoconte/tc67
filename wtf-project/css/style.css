@@ -2311,23 +2311,48 @@ h3 {
     top: 15px;
     right: 15px;
 }
-      
- 
 
-
-   
-nav .logo-block {
-    position: fixed;
+#hamb-mobile {
+    top: 15px;
+    right: 15px;
     display: block;
+}    
+
+nav .top-menu {
+    display: none;
+} 
+ 
+.popup_block .menu-pos a {
+    color: #fff;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 0 25px;
+}   
+    
+nav .logo-block {
+    display: inline-block;
     float: left;
     height: 50px;
 } 
     
+nav .logo-block {
+    position: fixed;
+    left: 12px;
+    top: 0px;
+    display: inline-block;
+    float: left;
+}
+    
 .logo-block span {
 
     padding: 23px 30px 21px;
-}    
+}  
     
+header .phbgh {
+    display: block;
+    height: 50px;
+}
+  
 .home {
     min-height: 500px;
 }
@@ -2342,7 +2367,9 @@ nav .top-menu {
     display: none;
 } 
       
-  
+
+    
+    
 .home .home-table h1 {
 font-size: 20px;
 }
