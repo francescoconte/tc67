@@ -1,0 +1,386 @@
+
+
+#hamb { position: fixed; display: none; top: 45px; right: 45px; z-index: 999999; background: #2ea0f0; height: 60px; width: 60px;}
+
+#hamb-mobile {position: absolute;display: none;top: 45px;right: 45px;z-index: 999999;background: #2ea0f0;height: 60px;width: 60px;}
+
+
+header .phbgh { position: fixed; display: none; height: 0px; width: 100%; top:0px; left:0px; background: #000; z-index: 99;}
+
+#hamb-t {position: fixed; display: none; bottom:45px; right: 45px; z-index: 999999; background: @colfirm2; height: 60px; width: 60px;
+        opacity: 0.40;
+    span {position: absolute; top: 19px; left: 22px; width: 2px; height: 34%; background: #fff; .pov1; }
+    span::before {content: '';     position: absolute; top: -10px; left: 9px; height: 100%; width: 100%; background: #fff; .pov2;}
+}
+
+#hamb-t:hover {opacity: 1;}
+
+#hamb {position: fixed; display: none; top:45px; right: 45px; z-index: 999999; background: @colfirm2; height: 60px; width: 60px; }
+
+fade{display:none;background:#252525;position:fixed;left:0;top:0;width:100%;height:100%;opacity:.95;z-index:9999;}
+.popup_block{display:none;top:0px;float:left;position:fixed;width:100%;height:100%;z-index:100001;background-position:CENTER CENTER !important;background-repeat:no-repeat !important;background-size:COVER !important;}
+.popup_block .fon{position:absolute;background:#000;opacity:0.8;z-index:10000;display:block;top:0px;left:0px;width:100%;height:100%;}
+.popup_block .menu-pos{position:absolute;display:table;width:100%;height:100%;z-index:111111;}
+.popup_block .menu-pos .menu{display:table-cell;vertical-align:middle;margin:0 auto;box-sizing:border-box;padding:25px;}
+.popup_block .menu-pos li{padding:10px;color:#fff;letter-spacing:2px;text-align:left;}
+.popup_block .menu-pos a{color:#fff;font-size:55px; box-sizing:border-box;padding:0 50px;text-transform:uppercase;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s; font-family: @fontH;}
+.popup_block .menu-pos a:hover{color:@colfirm2;}
+
+
+// mobile-menu
+
+
+
+
+
+
+.map-ad {position:relative; height: 14px;display: table; width: 100%; padding: 0px 0 10px;
+span {position: relative; display: table-cell; vertical-align: middle; color: #fff; 
+img {position: relative; display:inline-block; vertical-align: middle; height: 14px; width: auto; margin: 0px; margin-right: 10px;}}
+} 
+.logo-block {position: relative; display: block;  
+.logo {position: relative; display: inline-block; color: transparent; width: 98px; height: 29px; background: url(../img/logo-w.jpg); background-repeat: no-repeat; margin: 30px 0px; float: left; font-size: 1px;}
+span {position: relative; display: inline-block; font-size:14px; color:#fff; line-height: 1.4; padding: 25px 45px 21px; float: left;}
+}
+
+
+// navigate
+nav {position: absolute; top:0px; left: 0px; width: 100%; height: 100px; z-index: 999;
+.logo-block {display: inline-block; float: left;} 
+.top-menu {position: relative; display: inline-block;; float: right; height: 100%;
+li {position: relative; display: inline-table; float: left; height:100%;
+a {position: relative; display: table-cell; vertical-align: middle; text-align: center; font-family: @fontB; font-size: 16px; color: #fff;padding: 0 10px; .m-speed;}
+a:hover {color: @colfirm;}
+.login {position: relative; padding: 0 0px 0 55px; span {position: relative; display: inline-block;
+padding: 9px 16px; border: solid 2px #fff;  border-radius: 30px;  font-size: 14px; .m-speed;}}
+.login:hover {position: relative; padding: 0 0px 0 55px; span {position: relative; display: inline-block;
+padding: 9px 16px; color: @colfirm; border: solid 2px @colfirm;      border-radius: 30px;  font-size: 14px; }}
+}}}
+// navigate
+
+
+
+
+@media screen and (min-width:1024px) and (max-width:1279px)   {}
+
+
+@media screen and (min-width:768px) and (max-width:1023px)   {
+  
+
+
+#hamb-mobile {
+    top: 15px;
+    right: 25px;
+    display: block;
+}    
+    
+#hamb-t {
+    bottom: 15px;
+    right: 25px;
+}
+    
+#hamb {
+    top: 15px;
+    right: 25px;
+} 
+
+nav .top-menu {
+    display: none;
+} 
+    
+}
+
+
+@media screen and (min-width:600px) and (max-width:767px)   {
+     
+
+#hamb-mobile {
+    top: 15px;
+    right: 25px;
+    display: block;
+}
+    
+#hamb-t {
+    bottom: 15px;
+    right: 25px;
+}
+    
+#hamb {
+    top: 15px;
+    right: 25px;
+}     
+
+nav .top-menu {
+    display: none;
+} 
+
+
+    
+
+}
+
+
+@media screen and (min-width:420px) and (max-width:599px)   {
+    
+    
+#hamb-mobile {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999999;
+    background: #2ea0f0;
+    height: 50px;
+    width: 50px;
+}
+ 
+    
+#hamb {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 999999;
+    background: #2ea0f0;
+    height: 50px;
+    width: 50px;
+}
+    
+#hamb-t {
+  bottom: 0px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+}
+    
+#hamb-t span {
+    top: 16px;
+    left: 18px;
+}
+    
+#hamb-t span::before {
+    top: -9px;
+    left: 8px;
+}
+    
+.hamburger-box {
+    width: 28px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    left: 1px;
+}
+    
+.hamburger-inner {
+    display: block;
+    top: 29%;
+}
+    
+    
+nav .top-menu {
+    display: none;
+} 
+    
+    
+nav .logo-block {
+    position: fixed;
+    left: 12px;
+    top: 0px;
+    display: inline-block;
+    float: left;
+}    
+    
+ 
+.popup_block .menu-pos a {
+    color: #fff;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 0 25px;
+}   
+    
+    
+nav .logo-block {
+    position: fixed;
+    left: 12px;
+    top: 0px;
+    display: inline-block;
+    float: left;
+    height: 50px;
+}
+    
+.logo-block span {
+
+    padding: 23px 30px 21px;
+} 
+    
+    
+    
+.logo-block .logo {
+    margin: 15px 0px;
+    font-size: 1px;
+}
+
+.logo-block span {
+    padding: 12px 18px 21px;
+    font-size: 12px;
+}
+    
+header .phbgh {
+    display: block;
+    height: 50px;
+}
+  
+#hamb-mobile {
+    top: 0px;
+    right: 0px;
+    display: block;
+}    
+
+nav .top-menu {
+    display: none;
+} 
+        
+#hamb-mobile {
+    top: 0px;
+    right: 0px;
+    display: block;
+}    
+
+nav .top-menu {
+    display: none;
+} 
+
+}
+
+
+@media screen and (max-width:419px)   {
+ 
+    
+h2 {
+    font-size: 20px;
+}    
+
+.logo-block .logo {
+    margin: 15px 0px;
+    font-size: 1px;
+}
+
+.logo-block span {
+    padding: 12px 18px 21px;
+    font-size: 12px;
+}
+     
+.home .home-table h1 {
+font-size: 20px;
+}
+    
+#hamb {
+    top: 15px;
+    right: 15px;
+}
+
+#hamb-mobile {
+    top: 15px;
+    right: 15px;
+    display: block;
+}    
+
+nav .top-menu {
+    display: none;
+} 
+ 
+.popup_block .menu-pos a {
+    color: #fff;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 0 25px;
+}   
+    
+nav .logo-block {
+    display: inline-block;
+    float: left;
+    height: 50px;
+} 
+    
+nav .logo-block {
+    position: fixed;
+    left: 12px;
+    top: 0px;
+    display: inline-block;
+    float: left;
+}
+  
+
+header .phbgh {
+    display: block;
+    height: 50px;
+}
+
+ 
+
+#hamb-mobile {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999999;
+    background: #2ea0f0;
+    height: 50px;
+    width: 50px;
+}
+ 
+    
+#hamb {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 999999;
+    background: #2ea0f0;
+    height: 50px;
+    width: 50px;
+}
+    
+#hamb-t {
+  bottom: 0px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+}
+    
+#hamb-t span {
+    top: 16px;
+    left: 18px;
+}
+    
+#hamb-t span::before {
+    top: -9px;
+    left: 8px;
+}
+    
+.hamburger-box {
+    width: 28px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    left: 1px;
+}
+    
+.hamburger-inner {
+    display: block;
+    top: 29%;
+}
+  
+ 
+
+#hamb-mobile {
+    top: 0px;
+    right: 0px;
+    display: block;
+}    
+
+nav .top-menu {
+    display: none;
+} 
+    
+
+
+}
+
+

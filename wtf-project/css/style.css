@@ -27,7 +27,109 @@ select {
   border: 0;
   box-sizing: border-box;
 }
-
+.m-n {
+  margin: 0;
+}
+.img-origin {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bgTC {
+  background-position: top CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+}
+.bgCC {
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+}
+.bgCCC {
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+}
+.pov1 {
+  -moz-transform: rotate(45deg);
+  /* Для Firefox */
+  -ms-transform: rotate(45deg);
+  /* Для IE */
+  -webkit-transform: rotate(45deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(45deg);
+  /* Для Opera */
+  transform: rotate(45deg);
+}
+.pov2 {
+  -moz-transform: rotate(-90deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-90deg);
+  /* Для IE */
+  -webkit-transform: rotate(-90deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg);
+  /* Для Opera */
+  transform: rotate(-90deg);
+}
+.pov3 {
+  -moz-transform: rotate(-42deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-42deg);
+  /* Для IE */
+  -webkit-transform: rotate(-42deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-42deg);
+  /* Для Opera */
+  transform: rotate(-42deg);
+}
+.pov4 {
+  -moz-transform: rotate(-132deg);
+  /* Для Firefox */
+  -ms-transform: rotate(132deg);
+  /* Для IE */
+  -webkit-transform: rotate(132deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(132deg);
+  /* Для Opera */
+  transform: rotate(132deg);
+}
+.pov5 {
+  -moz-transform: rotate(180deg);
+  /* Для Firefox */
+  -ms-transform: rotate(180deg);
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(180deg);
+  /* Для Opera */
+  transform: rotate(180deg);
+}
+.m-speed {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.med-speed {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.mod-speed {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.speed-max {
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+}
 /* wow */
 ::-moz-selection {
   color: #fff;
@@ -280,28 +382,82 @@ progress[value]::-webkit-progress-value {
   height: 60px;
   width: 60px;
 }
-
-
-
 #hamb-mobile {
-    position: absolute;
-    display: none;
-    top: 45px;
-    right: 45px;
-    z-index: 999999;
-    background: #2ea0f0;
-    height: 60px;
-    width: 60px;
+  position: absolute;
+  display: none;
+  top: 45px;
+  right: 45px;
+  z-index: 999999;
+  background: #2ea0f0;
+  height: 60px;
+  width: 60px;
 }
-
-
 header .phbgh {
-    position: fixed;
-    display: none;
-    height: 0px;
+  position: fixed;
+  display: none;
+  height: 0px;
+  width: 100%;
+  top:0px;
+  left:0px;
+  background: #000;
+      z-index: 99;    
+}
+#hamb-t {
+  position: fixed;
+  display: none;
+  bottom: 45px;
+  right: 45px;
+  z-index: 999999;
+  background: #2ea0f0;
+  height: 60px;
+  width: 60px;
 
 }
-
+#hamb-t span {
+  position: absolute;
+  top: 19px;
+  left: 22px;
+  width: 2px;
+  height: 34%;
+  background: #fff;
+  -moz-transform: rotate(45deg);
+  /* Для Firefox */
+  -ms-transform: rotate(45deg);
+  /* Для IE */
+  -webkit-transform: rotate(45deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(45deg);
+  /* Для Opera */
+  transform: rotate(45deg);
+}
+#hamb-t span::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 9px;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -moz-transform: rotate(-90deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-90deg);
+  /* Для IE */
+  -webkit-transform: rotate(-90deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg);
+  /* Для Opera */
+  transform: rotate(-90deg);
+}
+#hamb {
+  position: fixed;
+  display: none;
+  top: 45px;
+  right: 45px;
+  z-index: 999999;
+  background: #2ea0f0;
+  height: 60px;
+  width: 60px;
+}
 fade {
   display: none;
   background: #252525;
@@ -314,16 +470,16 @@ fade {
   z-index: 9999;
 }
 .popup_block {
-    display: none;
-    top: 0px;
-    float: left;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 97;
-    background-position: CENTER CENTER !important;
-    background-repeat: no-repeat !important;
-    background-size: COVER !important;
+  display: none;
+  top: 0px;
+  float: left;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100001;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
 }
 .popup_block .fon {
   position: absolute;
@@ -371,28 +527,6 @@ fade {
 .popup_block .menu-pos a:hover {
   color: #2ea0f0;
 }
-
-nav .logo-block {
-    position: relative;
-    left:12px;
-    top: 0px;
-    display: inline-block;
-    float: left;
-}
-
-
-    .phbgh {
-         position: fixed;
-    display: block;
-        height: 50px;
-        width: 100%;
-        left:0px;
-        top: 0px;
-        background: #000;
-        z-index: 99;      
-    }
-
-
 .button {
   position: relative;
   display: inline-block;
@@ -427,6 +561,7 @@ nav .logo-block {
 .button:hover span {
   position: relative;
   display: block;
+  font-size: 14px;
   font-family: 'ProximaNovaBold', sans-serif;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -527,10 +662,6 @@ nav .logo-block {
   margin: 0px;
   margin-right: 10px;
 }
-
-
-/* шапка страницы */
-
 .logo-block {
   position: relative;
   display: block;
@@ -558,7 +689,8 @@ nav .logo-block {
 }
 nav {
   position: absolute;
-  display: block;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100px;
   z-index: 999;
@@ -648,11 +780,6 @@ nav .top-menu li .login:hover span {
   width: 1210px;
   height: 100%;
 }
-
-
-
-/* абсолютный домашний блок */
-
 .home {
   position: absolute;
   display: block;
@@ -771,11 +898,6 @@ nav .top-menu li .login:hover span {
   background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
   background-image: -ms-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
 }
-
-
-
-/* блоки аренды на первой style */
-
 .home-arenda {
   position: relative;
   display: block;
@@ -960,11 +1082,6 @@ nav .top-menu li .login:hover span {
 .home-arenda .block-buttons .cv-blue:hover span {
   color: #ffffff;
 }
-
-
-/* слайдер рекламы style */
-
-
 .teeser {
   position: relative;
   display: block;
@@ -1066,10 +1183,6 @@ nav .top-menu li .login:hover span {
 .teeser .midi .button {
   margin: 25px;
 }
-
-
-/* блок ТЦ style */
-
 .home-tc {
   position: relative;
   display: block;
@@ -1159,7 +1272,9 @@ nav .top-menu li .login:hover span {
   border-top: solid 8px #fff;
   border-left: solid 8px #fff;
   border-right: solid 8px #fff;
-
+  background-image: -moz-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
 }
 .home-tc .a-table .one .top-info h3 {
   text-align: left;
@@ -1327,12 +1442,6 @@ nav .top-menu li .login:hover span {
   -o-transform: scale(1.15);
   transform: scale(1.15);
 }
-
-
-
-/* slider (скидки на первой) style */
-
-
 .home-sale {
   position: relative;
   display: block;
@@ -1474,11 +1583,6 @@ nav .top-menu li .login:hover span {
 .home-sale .paginate-sale li.active {
   background: #18db61;
 }
-
-
-/* news-block (на первой странице) style */
-
-
 .home-news {
   position: relative;
   display: block;
@@ -1515,12 +1619,6 @@ nav .top-menu li .login:hover span {
   font-size: 12px;
   margin-bottom: 15px;
 }
-
-
-
-
-/* footer style */
-
 footer {
   position: relative;
   display: block;
@@ -1715,6 +1813,10 @@ footer .foot-info .end-block .parus a:hover {
 
 
 
+
+
+
+
 @media screen and (min-width:1024px) and (max-width:1279px)   {
     
 .content {
@@ -1800,9 +1902,6 @@ footer .f-block-tx ul a {
 }
 
 
-
-
-
 @media screen and (min-width:768px) and (max-width:1023px)   {
   
 
@@ -1812,6 +1911,16 @@ footer .f-block-tx ul a {
     right: 25px;
     display: block;
 }    
+    
+#hamb-t {
+    bottom: 15px;
+    right: 25px;
+}
+    
+#hamb {
+    top: 15px;
+    right: 25px;
+} 
 
 nav .top-menu {
     display: none;
@@ -1863,8 +1972,6 @@ font-size: 30px;
 
 }
     
- 
-
 
 
 .home-sale .sale-slider {
@@ -2275,8 +2382,6 @@ footer .foot-info .end-block .parus {
 }
 
 
-
-
 @media screen and (min-width:420px) and (max-width:599px)   {
     
 
@@ -2307,20 +2412,71 @@ h3 {
 }  
   
     
-#hamb {
-    top: 15px;
-    right: 15px;
-}
-
 #hamb-mobile {
-    top: 15px;
-    right: 15px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999999;
+    background: #2ea0f0;
+    height: 50px;
+    width: 50px;
+}
+ 
+    
+#hamb {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 999999;
+    background: #2ea0f0;
+    height: 50px;
+    width: 50px;
+}
+    
+#hamb-t {
+  bottom: 0px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+}
+    
+#hamb-t span {
+    top: 16px;
+    left: 18px;
+}
+    
+#hamb-t span::before {
+    top: -9px;
+    left: 8px;
+}
+    
+.hamburger-box {
+    width: 28px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    left: 1px;
+}
+    
+.hamburger-inner {
     display: block;
-}    
-
+    top: 29%;
+}
+    
+    
 nav .top-menu {
     display: none;
 } 
+    
+    
+nav .logo-block {
+    position: fixed;
+    left: 12px;
+    top: 0px;
+    display: inline-block;
+    float: left;
+}    
+    
  
 .popup_block .menu-pos a {
     color: #fff;
@@ -2329,11 +2485,6 @@ nav .top-menu {
     padding: 0 25px;
 }   
     
-nav .logo-block {
-    display: inline-block;
-    float: left;
-    height: 50px;
-} 
     
 nav .logo-block {
     position: fixed;
@@ -2341,12 +2492,25 @@ nav .logo-block {
     top: 0px;
     display: inline-block;
     float: left;
+    height: 50px;
 }
     
 .logo-block span {
 
     padding: 23px 30px 21px;
-}  
+} 
+    
+    
+    
+.logo-block .logo {
+    margin: 15px 0px;
+    font-size: 1px;
+}
+
+.logo-block span {
+    padding: 12px 18px 21px;
+    font-size: 12px;
+}
     
 header .phbgh {
     display: block;
@@ -2358,8 +2522,8 @@ header .phbgh {
 }
 
 #hamb-mobile {
-    top: 15px;
-    right: 15px;
+    top: 0px;
+    right: 0px;
     display: block;
 }    
 
@@ -2703,8 +2867,10 @@ footer .foot-info .logo-block {
 }
 
 
+@media screen and (max-width:419px)   {
 
-@media screen and (min-width:320px) and (max-width:419px)   {
+    
+.wrapper {min-width: 320px}    
     
 h2 {
     font-size: 20px;
@@ -2894,6 +3060,23 @@ h3 {
     width: 50px;
 }
     
+#hamb-t {
+  bottom: 0px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+}
+    
+#hamb-t span {
+    top: 16px;
+    left: 18px;
+}
+    
+#hamb-t span::before {
+    top: -9px;
+    left: 8px;
+}
+    
 .hamburger-box {
     width: 28px;
     height: 10px;
@@ -3052,8 +3235,7 @@ h3 {
     height: 14px;
     position: relative;
     bottom: 0px;
-}
-  
+} 
     
 footer .foot-info .end-block .cv-blue {
     float: none;
@@ -3190,5 +3372,4 @@ footer .foot-info .end-block .parus {
    
 
 }
-
 

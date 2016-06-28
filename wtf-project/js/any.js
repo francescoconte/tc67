@@ -28,7 +28,7 @@ if ($(this).scrollTop() > (750)){
   }
       
       
-if ($(this).scrollTop() > (2550)){  
+if ($(this).scrollTop() > (2800)){  
     $('#hamb-t').fadeIn();
 
   }
