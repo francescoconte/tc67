@@ -96,6 +96,48 @@
 
   }
 );      
+    
+     
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 1200
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        maxwidth: 800,
+        speed: 1200
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        maxwidth: 800,
+        speed: 1200
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        maxwidth: 800,
+        speed: 1200
+      }); 
+        
+      // Slideshow 4
+      $("#slider5").responsiveSlides({
+        maxwidth: 800,
+        speed: 1200
+      });
+        
+      // Slideshow 4
+      $("#slider6").responsiveSlides({
+        maxwidth: 800,
+        speed: 1200
+      });
+
+    });     
      
 });
      
