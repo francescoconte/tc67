@@ -1,3 +1,6 @@
+.body-ct {position: relative; height: 100%;}
+
+
 
 progress {
     position:fixed;
@@ -95,18 +98,39 @@ img {position: relative; display:inline-block; vertical-align: middle; height: 1
 span {position: relative; display: inline-block; font-size:14px; color:#fff; line-height: 1.4; padding: 25px 45px 21px; float: left;}
 }
 
+// img hover vor one
+.image {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px; overflow: hidden; border: solid 8px #fff; 
+.phbg {position: absolute; display: block; top: 0px; left: 0px; background: #000; opacity: .40; width: 100%; height: 100%; 
+-webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out;}    
+.one-info {position: absolute; display: block; top: 0px; left: 0px; padding: 16px;}
+
+.sc-image {position: absolute; display: block; width: 101%; height: 101%; top: -0.5%; left: -0.5%;
+.bgCC;  -webkit-transition: all 1s ease-out; -o-transition: all 1s ease-out; transition: all 1s ease-out; 
+}}
+
+.one:hover {.phbg {opacity: 0.75;}
+.sc-image {-webkit-transform: scale(1.15); -ms-transform: scale(1.105); -o-transform: scale(1.15); transform: scale(1.15);}}
+
 
 .wrapper {display: block; width: 100%; top:100%;
 .inner {position: absolute; display: block; width: 100%; top:100%;}
 }
 
+.inner-ct {position: relative !important; min-height: 100% !important;}
 
+.wrap-ct {float: left; min-height: 100%; background: #eeeeee;}
 // основные блоки сетки
 
 .middle {position: relative; display: table-cell; vertical-align: middle;}
 .content {position: relative; display: block; margin: 0 auto; width: 1210px; height: 100%;}
 
 // основные блоки сетки
+
+
+
+
+
+
 
 
 
@@ -135,8 +159,6 @@ span {position: relative; display: inline-block; font-size:14px; color:#fff; lin
 }
  
 }
-
-
 
 
 @media screen and (min-width:600px) and (max-width:767px)   {
@@ -202,7 +224,6 @@ h3 {
     float: left;
 }
 }
-
 
 
 @media screen and (min-width:420px) and (max-width:599px)   {
