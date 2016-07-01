@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2ea0f0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="список" class="cls-1" d="M1244,684h7.88v-7.875H1244V684Zm10.12,0H1262v-7.875h-7.88V684Zm0-18v7.875H1262V666h-7.88ZM1244,673.875h7.88V666H1244v7.875Z" transform="translate(-1244 -666)"/>
+</svg>
