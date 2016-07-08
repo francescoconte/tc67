@@ -1,7 +1,33 @@
  $(document).ready(function() {
-   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0; tcsl = 0;
+   var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0; tcsl = 0; liner = 0;
      
-  
+   
+     
+           $('#w-liner').click(function() {
+               
+               if (liner == 0) {
+               
+               
+                  $('#a-table-tx').addClass('liners');
+                  $('#w-liner').removeClass('w-active');
+                  liner = 1;
+             
+             }  else {
+                 
+                  $('#a-table-tx').removeClass('liners');
+                  $('#w-liner').addClass('w-active');
+                  liner = 0;   
+                 
+             }
+               
+               
+               
+               
+          });     
+     
+     
+     
+     
      
      
 $(function(){
