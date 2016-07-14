@@ -33,7 +33,7 @@
 $(function(){
 
 $('#hamb-t').on('click', function(e){
-  $('html,body').stop().animate({ scrollTop: $('#home').offset().top }, 1000);
+  $('html,body').stop().animate({ scrollTop: $('header').offset().top }, 1000);
   e.preventDefault();
 });
 
@@ -54,7 +54,7 @@ if ($(this).scrollTop() > (750)){
   }
       
       
-if ($(this).scrollTop() > (2800)){  
+if ($(this).scrollTop() > (800)){  
     $('#hamb-t').fadeIn();
 
   }
