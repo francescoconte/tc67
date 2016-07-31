@@ -1,0 +1,272 @@
+@import "grundfile.less";
+.home-sale {position: relative; display: block; width: 100%; padding: 80px 0 55px; float:left; background: @colbg2;
+h2 {text-align: center; margin-bottom: 60px;}
+.content { height: 605px;}   
+.sale-slider {position: absolute; top:0px; left: 0px; display: none; width: 100%;  float: left;
+height:  100%; overflow-y: hidden;
+    .sale-block {position: relative; display: block; margin: 0 auto; width: 1020px}
+.one-sale {position: relative; display: inline-block; width: 340px !important;  float: left;
+border-left: solid 12px @colbg2;
+border-right: solid 12px @colbg2;
+height: 450px; background: #fff;
+
+        
+.image-sale {position: relative; display: block; width: 100%; height: 240px; .bgTC;}        
+h3 {display: block; padding: 24px 25px;}
+span { display: block; padding: 0px 25px;color: @coltxt; font-size: 16px;}
+.map-ad {height: 14px;  position: absolute;  bottom: 14px;
+span { color: @coltxt; img{margin-top: -2px;}}} 
+    } } #sale-1 {display: block;} 
+
+
+.nav-sale {position: absolute; display: block; top:0px; left: 0px; width: 100%;   height: 490px;
+.sale-left {position: relative; display: inline-table; float: left; height: 100%; width: 20px;
+a {position: absolute; display: block;  top: 50%; margin-top: -23px; width: 20px; height: 33px; 
+.bgCCC; background: url(../img/sa-left.svg); }
+}
+.sale-right {position: relative; display: inline-table; float: right; height: 100%; width: 20px;
+a {position: absolute; display: block;  top: 50%; margin-top: -23px; width: 20px; height: 33px; 
+.bgCCC; background: url(../img/sa-right.svg); }
+}}
+    
+    
+.paginate-sale {position: absolute; display: block; width: 100%;bottom: 65px; left: 0px; text-align: center;
+li {position: relative; display:inline-block; width: 8px; height: 8px; background: #bebebe; border-radius: 15px; margin: 0 7px; cursor: pointer;} li.active {background: @colfirm;}   
+}
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1279px)   {
+
+.home-sale .sale-slider {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    float: left;
+    height: 100%;
+}    
+    
+.home-sale .paginate-sale {
+    display: none;
+}  
+   
+.home-sale .sale-slider .one-sale {
+    width: 33.33333% !important;
+    border-left: solid 12px #f9f9f9;
+    border-right: solid 12px #f9f9f9;
+    margin-bottom: 25px;
+}  
+
+.home-sale .content {
+    height: auto;
+}  
+    
+.home-sale .sale-slider .sale-block {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+} 
+ 
+
+   
+.home-news .news-post {
+    width: 50%;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px)   {
+
+
+.home-sale .sale-slider {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    float: left;
+    height: 100%;
+}    
+    
+.home-sale .paginate-sale {
+    display: none;
+}  
+   
+.home-sale .sale-slider .one-sale {
+    width: 100% !important;
+    border-left: solid 12px #f9f9f9;
+    border-right: solid 12px #f9f9f9;
+    margin-bottom: 25px;
+    height: auto;
+}
+     
+.home-sale .sale-slider .one-sale .image-sale {
+    height: 350px;
+}
+       
+.home-sale .sale-slider .one-sale span {
+    padding: 25px;
+}
+
+.home-sale .content {
+    height: auto;
+}  
+    
+.home-sale .sale-slider .sale-block {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+} 
+    
+    
+.home-news .news-post {
+    padding-left: 35px;
+    padding-right: 34px;
+    padding-bottom: 60px;
+}
+        
+.home-news .news-post {
+    width: 50%;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:767px)   {
+  
+
+.home-sale .sale-slider {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    float: left;
+    height: 100%;
+}    
+    
+.home-sale .paginate-sale {
+    display: none;
+}  
+   
+.home-sale .sale-slider .one-sale {
+    width: 100% !important;
+    border-left: solid 12px #f9f9f9;
+    border-right: solid 12px #f9f9f9;
+    margin-bottom: 25px;
+    height: auto;
+}
+    
+.home-sale .sale-slider .one-sale .image-sale {
+    height: 350px;
+} 
+    
+.home-sale .sale-slider .one-sale span {
+    padding: 25px;
+}
+   
+.home-sale .content {
+    height: auto;
+}  
+    
+.home-sale .sale-slider .sale-block {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+} 
+}
+
+@media screen and (min-width:420px) and (max-width:599px)   {
+
+.home-sale .content {
+    height: auto;
+}  
+.home-sale .sale-slider {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    float: left;
+    height: 100%;
+}    
+    
+.home-sale .paginate-sale {
+    display: none;
+}  
+   
+.home-sale .sale-slider .one-sale {
+    width: 100% !important;
+    border-left: solid 12px #f9f9f9;
+    border-right: solid 12px #f9f9f9;
+    margin-bottom: 25px;
+    height: auto;
+}
+.home-sale .sale-slider .one-sale .image-sale {
+    height: 350px;
+}   
+    
+.home-sale .sale-slider .one-sale span {
+    padding: 10px 25px;
+}
+     
+.home-sale .sale-slider .one-sale .map-ad {
+    height: 14px;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.home-sale .sale-slider .sale-block {
+   width: 100%;
+}
+
+}
+
+@media screen and (max-width:419px)   {
+
+
+ .home-sale h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}   
+    
+.home-sale .sale-slider {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    float: left;
+    height: 100%;
+}    
+    
+.home-sale .paginate-sale {
+    display: none;
+}  
+   
+.home-sale .sale-slider .one-sale {
+    width: 100% !important;
+    border-left: solid 12px #f9f9f9;
+    border-right: solid 12px #f9f9f9;
+    margin-bottom: 25px;
+    height: auto;
+}
+      
+.home-sale .sale-slider .one-sale .image-sale {
+    height: 350px;
+}
+     
+.home-sale .sale-slider .one-sale span {
+    padding: 10px 25px;
+}
+    
+.home-sale .content {
+    height: auto;
+}  
+    
+.home-sale .sale-slider .sale-block {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+} 
+  
+.home-sale .sale-slider .one-sale .map-ad {
+    height: 14px;
+    position: relative;
+    bottom: 0px;
+} 
+}

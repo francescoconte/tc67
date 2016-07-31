@@ -1,7 +1,7 @@
  $(document).ready(function() {
    var homesl = 0; teesersl = 0; salesl = 0; intro = 6000; click = 0; tcsl = 0; liner = 0;
      
-   
+
      
            $('#w-liner').click(function() {
                
