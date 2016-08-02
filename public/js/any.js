@@ -74,7 +74,6 @@ if ($(this).scrollTop() > (800)){
              $('#fade').fadeIn();
              $('#mbile-web').fadeIn();
              $('#hamb').addClass('close');
-             $("body").css("overflow","hidden");  
               click = 1;
               }
               
@@ -86,7 +85,6 @@ if ($(this).scrollTop() > (800)){
              $('#fade').fadeOut();
              $('#mbile-web').fadeOut();
              $('#hamb').removeClass('close');
-             $("body").css("overflow","auto"); 
                click = 0;
               }    
                   
@@ -104,8 +102,7 @@ if ($(this).scrollTop() > (800)){
              $('.hamburger--squeeze').addClass('is-active');
              $('#fade').fadeIn();
              $('#mbile-web').fadeIn();
-             $('#hamb').addClass('close');
-             $("body").css("overflow","hidden");  
+             $('#hamb').addClass('close'); 
               click = 1;
               }
               
