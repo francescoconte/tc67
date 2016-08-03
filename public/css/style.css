@@ -51,6 +51,11 @@ select {
   background-repeat: no-repeat !important;
   background-size: contain!important;
 }
+.bgCLC {
+  background-position: LEFT CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+}
 .pov1 {
   -moz-transform: rotate(45deg);
   /* Для Firefox */
@@ -144,6 +149,13 @@ select {
   background: #000;
 }
 /* forms */
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 input:focus {
   outline: none;
 }
@@ -351,6 +363,9 @@ li {
 }
 .red {
   background: #f02e40 !important;
+}
+.gr-txt {
+  color: #939393;
 }
 progress {
   position: fixed;
@@ -728,6 +743,7 @@ progress[value]::-webkit-progress-value {
   display: block;
   width: 100%;
   top: 100%;
+  overflow: hidden;
 }
 .wrapper .inner {
   position: absolute;
@@ -1192,14 +1208,14 @@ nav .top-menu li .login:hover span {
   padding: 0 0px 0 36px !important;
 }
 .wrap-head .login span {
-  border-color: #2ea0f0 !important;
+  border-color: #232425 !important;
   color: #fff !important;
-  background: #2ea0f0 !important;
+  background: #232425!important;
   padding: 14px 33px !important;
 }
 .wrap-head .login span:hover {
   background: #fff !important;
-  color: #2ea0f0 !important;
+  color: #232425!important;
 }
 .wrap-head .content {
   display: table !important;
@@ -2914,7 +2930,7 @@ nav .top-menu li .login:hover span {
 .tc-menu li {
   float: left;
   width: 33.3333%;
-  height: 140px;
+  height: 95px;
   margin: 10px 0;
 }
 .tc-menu li .one {
@@ -2930,8 +2946,10 @@ nav .top-menu li .login:hover span {
   width: 160px;
   height: 100%;
   background: #fff;
+  box-shadow: 2px 6px 10px 0px #e3e3e3;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  border-right: solid 1px #eeeeee;
 }
 .tc-menu li .one i {
   position: absolute;
@@ -2990,6 +3008,7 @@ nav .top-menu li .login:hover span {
 }
 .tc-menu li .one:hover .icon {
   background: #2ea0f0;
+  border-right: solid 1px #2ea0f0;
 }
 .tc-menu li .one:hover i.im--ico1 {
   background: url(../img/tc-ico1.svg);
@@ -3011,6 +3030,7 @@ nav .top-menu li .login:hover span {
 }
 .tc-menu li .active .icon {
   background: #2ea0f0;
+  border-right: solid 1px #2ea0f0;
 }
 .tc-menu li .active i.im--ico1 {
   background: url(../img/tc-ico1.svg);
@@ -3097,6 +3117,76 @@ nav .top-menu li .login:hover span {
   height: 100%;
   background: transparent;
 }
+.cat-tc-one .active-bar .s-line {
+  width: 432px;
+  background: transparent;
+  display: table;
+}
+.cat-tc-one .active-bar .s-line .stadt {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+.cat-tc-one .active-bar .s-line .stadt label {
+  float: left;
+  margin-top: 18px;
+}
+.cat-tc-one .active-bar .s-line .stadt .sale--inp {
+  float: right;
+  position: relative;
+}
+.cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+  background: transparent;
+  font-size: 14px;
+  color: #232425;
+  padding: 16px 20px;
+  width: 220px;
+  border: solid 1px #e1e1e1;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+.cat-tc-one .active-bar .s-line .stadt .search {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/serch.png);
+  right: 25px;
+  top: 18px;
+}
+.cat-tc-one .active-bar .s-line .stadt .search:hover {
+  background: url(../img/search-hov.png);
+}
+.cat-tc-one .active-bar .nav-inform {
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.cat-tc-one .active-bar .nav-inform li {
+  display: inline-table;
+  height: 100%;
+  margin: 0 28px;
+}
+.cat-tc-one .active-bar .nav-inform li a {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  color: #232425;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.cat-tc-one .active-bar .nav-inform li a:hover {
+  color: #2ea0f0;
+}
+.cat-tc-one .active-bar .nav-inform li .active {
+  color: #2ea0f0;
+}
 .cat-tc-one #price,
 .cat-tc-one #price2 {
   padding: 5px;
@@ -3150,6 +3240,9 @@ nav .top-menu li .login:hover span {
   float: left;
   display: inline-block;
   margin: 0 12px;
+  width: auto;
+  min-width: 240px;
+  text-align: center;
 }
 .cat-tc-one .title-bar .button-bar .button span {
   padding: 12px 45px;
@@ -3206,6 +3299,13 @@ nav .top-menu li .login:hover span {
 }
 .cat-tc-one .one-tc .one .image {
   border: 0px solid;
+}
+.cat-tc-one .one-tc .one .image .phbg {
+  background: transparent;
+  opacity: 1;
+  background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  background-image: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
 }
 .cat-tc-one .one-tc .mag--one {
   height: 250px;
@@ -3326,12 +3426,57 @@ nav .top-menu li .login:hover span {
 .cat-tc-one .one-tc .one-info .mag .mag--title h5 {
   font-size: 16px;
   font-family: 'ProximaNovaBold', sans-serif;
+  margin-bottom: 8px;
+}
+.cat-tc-one .one-tc .one-info h4 {
+  font-size: 16px;
+  font-family: 'ProximaNovaBold', sans-serif;
+  display: block;
+  margin-bottom: 15px;
+  float: left;
+  width: 100%;
+}
+.cat-tc-one .one-tc .one-info .inform--one-desk {
+  font-size: 14px;
+  color: #939393;
+  margin: 15px 0;
+  float: left;
+  width: 100%;
+  height: 58px;
+  overflow: hidden;
+}
+.cat-tc-one .one-tc .one-info .inform--one-stat {
+  margin: 20px 0;
+  float: left;
+  width: 100%;
+}
+.cat-tc-one .one-tc .one-info .inform--one-stat span {
+  font-size: 12px;
+  color: #939393;
+  height: 14px;
+  background-position: LEFT CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  margin-right: 35px;
+  padding-left: 25px;
+}
+.cat-tc-one .one-tc .one-info .inform--one-stat .time {
+  background: url(../img/time-icon.png);
+}
+.cat-tc-one .one-tc .one-info .inform--one-stat .eye {
+  background: url(../img/eye.png);
 }
 .cat-tc-one .one-tc .mag--one-info {
   height: 285px;
 }
 .cat-tc-one .one-tc .arenda--one-info {
-  height: auto;
+  height: 80px;
+}
+.cat-tc-one .one-tc .inform--one-info {
+  height: 240px;
+}
+.cat-tc-one .one-tc .sc-image {
+  transform: none;
 }
 .cat-tc-one .liners .one-tc {
   display: inline-block;
@@ -3373,9 +3518,11 @@ nav .top-menu li .login:hover span {
 }
 .cat-tc-one .paginator a:hover {
   opacity: 0.75;
+  border: solid 1px #2ea0f0;
 }
 .cat-tc-one .paginator .active {
   color: #2ea0f0;
+  border: solid 1px #2ea0f0;
 }
 .cat-tc-one .paginator .next {
   color: #fff;
@@ -3411,6 +3558,17 @@ nav .top-menu li .login:hover span {
   }
   .cat-tc-one .liners .one-tc .one-info {
     width: 60%;
+  }
+  .cat-tc-one .active-bar .nav-inform li {
+    margin: 0 20px;
+  }
+  .cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 220px;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -3460,6 +3618,33 @@ nav .top-menu li .login:hover span {
   }
   .cat-tc-one .liners .one-tc .one-info {
     width: 60%;
+  }
+  .cat-tc-one .active-bar .nav-inform {
+    padding: 15px;
+  }
+  .cat-tc-one .active-bar .nav-inform li {
+    display: inline-table;
+    height: 35px;
+    margin: 0 28px;
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+  .cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+  }
+  .cat-tc-one .active-bar .ui-in {
+    width: 100%;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp {
+    float: right;
+    width: 100%;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 100%;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+    padding-right: 25px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
@@ -3524,6 +3709,31 @@ nav .top-menu li .login:hover span {
   }
   .cat-tc-one .liners .one-tc .one-info {
     width: 60%;
+  }
+  .cat-tc-one .active-bar .nav-inform {
+    padding: 15px;
+  }
+  .cat-tc-one .active-bar .nav-inform li {
+    height: 35px;
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+  .cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+  }
+  .cat-tc-one .active-bar .ui-in {
+    width: 100%;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp {
+    float: right;
+    width: 100%;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 100%;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+    padding-right: 25px;
   }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
@@ -3599,6 +3809,22 @@ nav .top-menu li .login:hover span {
   .cat-tc-one .paginator a {
     font-size: 12px;
     padding: 5px 10px;
+  }
+  .cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+  }
+  .cat-tc-one .active-bar .ui-in {
+    width: 100%;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp {
+    float: right;
+    width: 100%;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 100%;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+    padding-right: 25px;
   }
 }
 @media screen and (max-width: 419px) {
@@ -3688,6 +3914,28 @@ nav .top-menu li .login:hover span {
   .cat-tc-one .active-bar select {
     font-size: 12px;
   }
+  .cat-tc-one .active-bar .nav-inform li {
+    height: 53px;
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+  .cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+  }
+  .cat-tc-one .active-bar .ui-in {
+    width: 100%;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp {
+    float: right;
+    width: 100%;
+  }
+  .cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 100%;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+    padding-right: 25px;
+  }
 }
 footer {
   position: relative;
@@ -3763,7 +4011,7 @@ footer .foot-info {
 }
 footer .foot-info .logo-block {
   float: left;
-  width: 540px;
+  width: 520px;
 }
 footer .foot-info .logo-block .logo {
   font-size: 0px;
@@ -3838,6 +4086,7 @@ footer .foot-info .end-block .button {
   border: solid 2px #18db61;
   margin: 0px;
   float: right;
+  width: 100%;
 }
 footer .foot-info .end-block .cv-blue {
   border-radius: 0px;

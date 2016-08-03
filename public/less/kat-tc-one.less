@@ -13,8 +13,30 @@ select {width: 150%; height: 100%; height: 80px;    padding: 30px 0px; backgroun
 .m-line2 {width: 331px;}
 .m-line:last-child { border: solid 0px}
 .m-line2:last-child { border: solid 0px}
-
 select::after {content: ''; position: absolute; top:0px; left:0px; width: 215px; height: 100%; background: transparent;}
+
+.s-line {width: 432px; background: transparent; display: table;
+.stadt {.middle;
+label {float: left; margin-top: 18px}    
+.sale--inp {float: right; position: relative;
+input {background: transparent; font-size: 14px; color: @coltxt; padding: 16px 20px; width: 220px; border: solid 1px #e1e1e1; border-radius: 25px; box-sizing: border-box;}
+}
+.search { position: absolute; display: block; width: 16px; height: 16px; background: url(../img/serch.png); right: 25px; top:18px;}    
+    .search:hover {background: url(../img/search-hov.png);}    
+
+}    
+}    
+    
+.nav-inform { float: left; width: 100%; height: 100%; text-align: center;
+li {display: inline-table; height: 100%; margin: 0 28px;
+a {.middle; color: @coltxt; font-family: @fontB; font-size: 14px; text-transform: uppercase; .m-speed;}   
+a:hover {color: @colfirm2;}
+    .active {color: @colfirm2;}    
+}    
+
+    }
+    
+    
 }
 
 #price,#price2 {padding:5px; width:50px; background: transparent;}
@@ -31,7 +53,7 @@ a {font-size: 20px; background: #eeeeee; display: inline-block; padding: 10px 30
   
     
 .button-bar {float: right;
-.button {float: left; display: inline-block; margin: 0 12px; span{padding: 12px 45px;}}    
+.button {float: left; display: inline-block; margin: 0 12px; width: auto; min-width: 240px; text-align: center; span{padding: 12px 45px;}}    
 .but-cat {float: left; display: inline-table; margin: 0 12px; height: 45px;
     
 .mid {position: relative; display: table-cell; vertical-align: middle; margin: 0 auto; 
@@ -45,7 +67,14 @@ a {font-size: 20px; background: #eeeeee; display: inline-block; padding: 10px 30
 
 
 .one-tc {float: left; display: inline-block; float: left; width: 33.3333%;  border-left: solid 10px #fafafa; border-right: solid 10px #fafafa; margin-bottom: 28px;
-    .one{width: 100%; height: 270px; .image{ border: 0px solid;}} .mag--one {height: 250px;}
+.one{width: 100%; height: 270px; 
+.image{ border: 0px solid;
+.phbg {  background: transparent; opacity: 1;
+  background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);
+  }
+}} .mag--one {height: 250px;}
 .one-info {float: left; width: 100%; padding: 18px 20px; height: 260px; background: #fff;
 ul{float: left; width: 100%; margin-bottom: 10px; padding-bottom: 10px; border-bottom: solid 1px #e8e8e8; 
 li {float: left; display: inline-block; width: 100%; white-space: nowrap; padding: 10px 0px;}    
@@ -77,17 +106,30 @@ a.reed-sh {color: #939393; margin-left: 10px;}
 }
 
 .mag--title {    float: left; height: 100%; display: inline-table; padding-left: 12px;
-    h5 {font-size: 16px; font-family: @fontB;}    
+    h5 {font-size: 16px; font-family: @fontB; margin-bottom: 8px;}   } 
 }
-    
-.title { }
-h5 {}
-.mag--desc {}
-    
 
-    }    
-    } .mag--one-info {height: 285px;} .arenda--one-info {height: auto;}}
+ 
+    
+// информация        
+ 
+h4 {font-size: 16px; font-family: @fontB; display: block; margin-bottom: 15px; float:left; width:100%;}    
+.inform--one-desk {font-size: 14px; color: #939393; margin: 15px 0; float:left; width:100%; height: 58px; overflow: hidden;}
+.inform--one-stat {  margin:  20px 0; float:left; width:100%;
+span {font-size: 12px; color: #939393; height: 14px; .bgCLC;  margin-right: 35px; padding-left: 25px;} 
+.time {background: url(../img/time-icon.png);}
+.eye {background: url(../img/eye.png);}
+}    
 
+
+} 
+    
+.mag--one-info {height: 285px;} 
+.arenda--one-info {height: 80px;}
+.inform--one-info {height: 240px;}    
+}
+
+    .one-tc {.sc-image {transform: none;}}
 
     
     
@@ -100,8 +142,8 @@ h5 {}
     
 .paginator {float: left; width: 100%; text-align: center; padding: 75px 15px;
 a {color: #999999; font-size: 16px; padding: 10px 18px; background: #fff; border-radius: 5px; margin: 0 5px; border: solid 1px #fff}
-    a:hover {opacity: 0.75;}    
-.active {color: @colfirm2}
+a:hover {opacity: 0.75; border: solid 1px @colfirm2;}    
+.active {color: @colfirm2; border: solid 1px @colfirm2;}
 .next { color: #fff; background: @colfirm2}
 }    
    
@@ -152,6 +194,20 @@ a {color: #999999; font-size: 16px; padding: 10px 18px; background: #fff; border
 .cat-tc-one .liners .one-tc .one-info {
     width: 60%;
 }
+ 
+.cat-tc-one .active-bar .nav-inform li {
+    margin: 0 20px;
+}
+    
+.cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+}   
+    
+.cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 220px;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+}    
     
 }
 
@@ -223,6 +279,42 @@ a {color: #999999; font-size: 16px; padding: 10px 18px; background: #fff; border
 .cat-tc-one .liners .one-tc .one-info {
     width: 60%;
 }
+ 
+    
+    
+.cat-tc-one .active-bar .nav-inform {
+    padding: 15px;
+}    
+    
+.cat-tc-one .active-bar .nav-inform li {
+    display: inline-table;
+    height: 35px;
+    margin: 0 28px;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+
+.cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+}  
+    
+.cat-tc-one .active-bar .ui-in {
+    width: 100%;
+}  
+.cat-tc-one .active-bar .s-line .stadt .sale--inp {
+    float: right;
+    width: 100%;
+}    
+    
+    
+.cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 100%;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+    padding-right: 25px;
+}   
     
 }
 
@@ -312,6 +404,39 @@ a {color: #999999; font-size: 16px; padding: 10px 18px; background: #fff; border
 .cat-tc-one .liners .one-tc .one-info {
     width: 60%;
 }
+    
+.cat-tc-one .active-bar .nav-inform {
+    padding: 15px;
+}
+    
+.cat-tc-one .active-bar .nav-inform li {
+    height: 35px;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+    
+    
+.cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+}  
+    
+.cat-tc-one .active-bar .ui-in {
+    width: 100%;
+}  
+.cat-tc-one .active-bar .s-line .stadt .sale--inp {
+    float: right;
+    width: 100%;
+}    
+    
+    
+.cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 100%;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+    padding-right: 25px;
+}   
+  
      
 }
 
@@ -419,6 +544,27 @@ a {color: #999999; font-size: 16px; padding: 10px 18px; background: #fff; border
     padding: 5px 10px;
 }
 
+.cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+}  
+    
+.cat-tc-one .active-bar .ui-in {
+    width: 100%;
+}  
+.cat-tc-one .active-bar .s-line .stadt .sale--inp {
+    float: right;
+    width: 100%;
+}    
+    
+    
+.cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 100%;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+    padding-right: 25px;
+}   
+      
+    
 }
 
 
@@ -544,5 +690,33 @@ a {color: #999999; font-size: 16px; padding: 10px 18px; background: #fff; border
 .cat-tc-one .active-bar select {
     font-size: 12px;
 }
+    
+.cat-tc-one .active-bar .nav-inform li {
+    height: 53px;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+    
+.cat-tc-one .active-bar .s-line .stadt label {
+    display: none;
+}  
+    
+.cat-tc-one .active-bar .ui-in {
+    width: 100%;
+}  
+.cat-tc-one .active-bar .s-line .stadt .sale--inp {
+    float: right;
+    width: 100%;
+}    
+    
+    
+.cat-tc-one .active-bar .s-line .stadt .sale--inp input {
+    width: 100%;
+    border: solid 1px #e1e1e1;
+    border-radius: 25px;
+    padding-right: 25px;
+}   
+  
     
 }

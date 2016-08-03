@@ -37,6 +37,7 @@ select {/* Partial list of available values in Gecko */
 .bgTC {background-position: top CENTER !important;  background-repeat: no-repeat !important; background-size: COVER !important;}
 .bgCC {background-position: CENTER CENTER !important;  background-repeat: no-repeat !important; background-size: COVER !important;} 
 .bgCCC {background-position: CENTER CENTER !important;  background-repeat: no-repeat !important; background-size: contain!important;}
+.bgCLC {background-position: LEFT CENTER !important;  background-repeat: no-repeat !important; background-size: contain!important;}
 
 .pov1 {    -moz-transform: rotate(45deg); /* Для Firefox */
     -ms-transform: rotate(45deg); /* Для IE */
@@ -88,6 +89,14 @@ select {/* Partial list of available values in Gecko */
 ::-moz-selection { color: #fff;  background: #000; }
 ::selection      { color: #fff;  background: #000; } 
 /* forms */
+
+input:not([type=checkbox]):not([type=radio]),
+textarea, 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 input:focus { outline: none; }
 textarea:focus { outline: none; }
 select:focus { outline: none; }
