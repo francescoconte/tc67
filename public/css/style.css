@@ -399,6 +399,12 @@ progress[value]::-webkit-progress-value {
   border-radius: 2px;
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
+.one .next {
+  display: none !important;
+}
+.one .prev {
+  display: none !important;
+}
 .button {
   position: relative;
   display: inline-block;
@@ -4503,4 +4509,116 @@ footer .foot-info .end-block .parus a:hover {
     font-size: 16px;
     padding-top: 35px;
   }
+}
+.home--tc--page {
+  float: left;
+  width: 100%;
+  position: relative;
+  font-size: 0px;
+}
+.home--tc--page .content {
+  height: 100%;
+}
+.home--tc--page .tc--page--info {
+  position: absolute;
+  bottom: 95px;
+  left: 0px;
+  width: 100%;
+}
+.home--tc--page .tc--page--info h1 {
+  text-align: center;
+}
+.home--tc--page .tc--page--info .tc--page--info--desc {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 25px;
+  height: 22px;
+  text-align: center;
+}
+.home--tc--page .tc--page--info .tc--page--info--desc .mapy {
+  display: inline-block;
+  width: 18px;
+  height: 22px;
+  margin-right: 15px;
+  background-position: LEFT CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  background: url(../img/icon--map--tc.png);
+}
+.next {
+  position: absolute;
+  display: block;
+  right: 90px;
+  top: 50%;
+  margin-top: -16px;
+  z-index: 9999999;
+  width: 20px;
+  height: 33px;
+  background: url(../img/right.svg);
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+}
+.prev {
+  position: absolute;
+  display: block;
+  left: 90px;
+  top: 50%;
+  margin-top: -16px;
+  z-index: 9999999;
+  width: 20px;
+  height: 33px;
+  background: url(../img/left.svg);
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+}
+/*! http://responsiveslides.com v1.54 by @viljamis */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+}
+.rslides ul {
+  width: 100% !important;
+  float: left;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 560px;
+  left: 0;
+  top: 0;
+  background-position: top CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+}
+.rslides li .phbg {
+  background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  background-image: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.56078) 0%, rgba(2, 2, 2, 0.28) 37%, rgba(3, 3, 3, 0.24) 47%, rgba(6, 6, 6, 0) 100%);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
