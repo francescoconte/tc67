@@ -4087,6 +4087,7 @@ footer .foot-info .end-block .button {
   margin: 0px;
   float: right;
   width: 100%;
+  text-align: center;
 }
 footer .foot-info .end-block .cv-blue {
   border-radius: 0px;
