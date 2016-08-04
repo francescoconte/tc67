@@ -1,17 +1,62 @@
 @import "grundfile.less";
 
 
-.home--tc--page {float: left; width: 100%; position: relative; font-size: 0px; 
+.home--tc--page {float: left; width: 100%; position: relative; font-size: 0px; height: 560px;
 .content {height: 100%;}
 
+   
+
+.tc--page--nav {position: absolute; height: 67px; bottom: 0px; left:0px; width: 100%;     z-index: 9999999;  
+    .content { background: #fff;} 
+ .nav-inform { float: left; width: 100%;  height: 64px; text-align: center;  border-bottom: solid 1px #eeeeee;
+li {display: inline-table; height: 100%; margin: 0 28px;
+a {.middle; color: @coltxt; font-family: @fontB; font-size: 14px; text-transform: uppercase; .m-speed;}   
+a:hover {color: @colfirm2;}
+    .active {color: @colfirm2;}    
+}    
+
+}   
+    
+    
+    
+}
+    
+.tc--page--sl-title {
+  position: absolute;
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  top:0px; left:0px;
+    z-index: 99999;
+    
+ 
+    
 .tc--page--info {position: absolute; bottom: 95px; left:0px; width: 100%;
 h1 {text-align: center;}  
 .tc--page--info--desc {display: block; font-size: 20px; color: #fff; margin-top: 25px; height: 22px;text-align: center;
-    .mapy { .bgCLC; background: url(../img/icon--map--tc.png); display: inline-block; width: 18px; height: 22px; margin-right: 15px;  .bgCLC; background: url(../img/icon--map--tc.png); }    
-    
+.mapy { .bgCLC; background: url(../img/icon--map--tc.png); display: inline-block; width: 18px; height: 22px; margin-right: 15px;  .bgCLC; background: url(../img/icon--map--tc.png); }    
 }    
+
+.tc--page--info--buttons {
+display: block; margin-top: 35px; text-align: center;         
+
+.tc--page--info--tel {display: inline-block; font-size: 12px; padding: 12px 20px; text-align: center; color: #fff; background: #18db61; margin: 0 7px;
+i {display: inline-block; width: 12px; height: 12px; .bgCCC; background: url(../img/info--tel.png); margin-right:10px;     margin-bottom: -3px; }  
+}
+.tc--page--info--tel:hover {background-color: #0dc652;}   
+    
+.tc--page--info--mail {display: inline-block; font-size: 12px; padding: 12px 20px; text-align: center; color: #fff; background: @colfirm2; margin: 0 7px;
+i { display: inline-block; width: 12px; height: 12px; .bgCCC; background: url(../img/info--mail.png); margin-right:10px; margin-bottom: -3px; }    
+}
+    
+.tc--page--info--mail:hover {background-color: #1e8edc;}
         
-    }    
+}    
+    
+}  
+  }  
+    
     
 }
 
@@ -49,18 +94,20 @@ h1 {text-align: center;}
 /*! http://responsiveslides.com v1.54 by @viljamis */
 
 .rslides {
-  position: relative;
+  position: absolute;
   list-style: none;
   overflow: hidden;
   width: 100% !important;
   padding: 0;
   margin: 0;
+  height: 100%; top:0px; left:0px;
+    z-index: 9;
   }
 
 .rslides ul {width: 100% !important; float: left;}
 
 
-.rslides li {
+.rslides .parallax {
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
@@ -69,13 +116,16 @@ h1 {text-align: center;}
   left: 0;
   top: 0;
   .bgTC; 
-
+    
     
     .phbg {  background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);
   background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.56078) 0%, rgba(2,2,2,0.28) 37%, rgba(3,3,3,0.24) 47%, rgba(6,6,6,0) 100%);
     position: absolute; display: block; width: 100%; height: 100%; top:0px; left: 0px;
-    }    
+    }     
+
+    
+  
 
 
 
@@ -95,3 +145,62 @@ h1 {text-align: center;}
   width: 100%;
   border: 0;
   }
+
+
+
+.home--tc--content {position: relative; display: block; float: left; width: 100%; min-height: 550px; padding-bottom: 100px; background: #fafafa;
+
+.content--float {position: relative; display: block; float: left; width: 100%; padding: 40px 125px; background: #fff;}   
+    
+    
+.home--tc--content-info { float: left; width: 100%; margin-left: -20px; margin-bottom: 45px;
+ 
+.tc--content-info-one {position: relative; float: left; width: 50%; 
+border-left: solid  20px #fff; border-right: solid  20px #fff;
+height: 300px;
+#map { width: 100%;height: 100%; position: absolute; top:0px; left: 0px; }       
+    
+.one--table-line {width: 100%; height: 47px; float: left; position: relative;
+.line--title { position:relative; font-size: 14px; display: inline-block; float: left; font-family: @fontH; background:#fff;
+ padding-right: 3px; padding-bottom: 3px;    
+}
+.line--desc { position:relative; font-size: 14px; display: inline-block; float: right; font-family: @fontH; background:#fff; color: #939393; padding-bottom: 3px; padding-left: 3px;
+}  
+   
+}
+    
+    
+.one--table-line::before {content: ''; position: absolute; width: 100%; border: dotted 1px #f3f3f3; top:15px; left: 0px;}
+}    
+}
+    
+article {float: left; width: 100%;    
+p{margin: 20px 0; float: left; width: 100%; font-size: 14px; font-family: @fontH; }    
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
