@@ -367,6 +367,9 @@ li {
 .gr-txt {
   color: #939393;
 }
+.red-txt {
+  color: #f33838;
+}
 progress {
   position: fixed;
   top: 0px;
@@ -4818,4 +4821,5 @@ footer .foot-info .end-block .parus a:hover {
   width: 100%;
   font-size: 14px;
   font-family: 'proxima_nova_ltlight', sans-serif;
+  font-weight: 300;
 }
