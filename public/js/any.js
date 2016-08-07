@@ -3,6 +3,27 @@
      
 
      
+
+           $('#tel').click(function() {
+                
+                  $('#false').fadeOut(0);
+                  $('#true').delay(1000).css('display' , 'block');
+                 
+             }); 
+     
+     $('.tel').click(function() {
+                
+                  $('.false').fadeOut(0);
+                  $('.true').delay(1000).css('display' , 'block');
+                 
+             }); 
+               
+               
+                    
+     
+     
+     
+     
            $('#w-liner').click(function() {
                
                if (liner == 0) {

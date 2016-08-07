@@ -89,7 +89,14 @@ strong.pl {display: inline; font-family: @fontB; text-transform: uppercase;}
     a {display: inline-block; color: @colfirm2; padding: 7px 0;}
 a.reed-sh {color: #939393; margin-left: 10px;} 
     .reed-sh:hover {color: @colfirm}
+.date-ar {    margin-top: 6px;
+    display: inline-block;}   
+.but-blue {position: relative; display: inline-block; background: @colfirm2; float:right; border-radius:25px; margin-right: 8px;
+span {position: relative; display: block; color: #fff; font-size: 12px; padding: 6px 15px;} 
+    } .graybut {background: #e8e8e8; span{color:@coltxt;;}}  
+
 }
+
     
 .foot-ar {position: relative;float: left; width: 100%; margin-top: 32px; height: 36px;
 .numb {float: left; display: inline-block; background: #eeeeee; border-radius:25px;  span {display: block; font-family: @fontB; font-size: 16px; color: #3b3b3b; padding: 8px 24px;}}    
@@ -108,6 +115,8 @@ a.reed-sh {color: #939393; margin-left: 10px;}
 .mag--title {    float: left; height: 100%; display: inline-table; padding-left: 12px;
     h5 {font-size: 16px; font-family: @fontB; margin-bottom: 8px;}   } 
 }
+    
+.one-mag {height: auto;}
 
  
     
@@ -124,9 +133,69 @@ span {font-size: 12px; color: #939393; height: 14px; .bgCLC;  margin-right: 35px
 
 } 
     
-.mag--one-info {height: 285px;} 
+.mag--one-info {height: 285px;}
+.mag--one-info-mag--page {height: 315px;} 
 .arenda--one-info {height: 80px;}
-.inform--one-info {height: 240px;}    
+.inform--one-info {height: 240px;}  
+    
+h5 {float: left; width: 100%; display: block; font-size: 16px; font-family: @fontB; margin: 0px 0 10px;}
+.mag--map-address {float: left; width: 100%; display: block; font-size: 14px; margin: 0px 0 30px;
+i {display: inline-block; width: 14px; height: 14px; .bgCCC; background: url(../img/icon--map--tc.png)}    
+}
+
+.tc--content-info-one {position: relative; float: left; width: 100%; 
+height: 60px;
+#map { width: 100%;height: 100%; position: absolute; top:0px; left: 0px; }       
+    
+.one--table-line {width: 100%; height: 32px; float: left; position: relative;
+.line--title { position:relative; font-size: 14px; display: inline-block; float: left; font-family: @fontH; background:#fff;
+ padding-right: 3px; padding-bottom: 3px;    
+}
+.line--desc { position:relative; font-size: 14px; display: inline-block; float: right; font-family: @fontH; background:#fff; padding-bottom: 3px; padding-left: 3px;
+}  
+   
+}
+    
+.mag--but-block {
+width: 100%; float: left; margin-top: 25px;
+    
+.tc--page--info--tel {display: inline-block; text-align: center; color: @colfirm2; background: #fff;
+ height: 39px; padding: 11px 16px; border: solid 2px @colfirm2; float: left; 
+    
+.true { font-size: 12px; display: none;}
+.false { font-size: 12px; display: block;}    
+    
+
+i {display: inline-block; width: 12px; height: 12px; .bgCCC; background: url(../img/mag-phone.svg); margin-right:10px;     margin-bottom: -3px; }  
+} 
+    
+.tc--page--info--tel:hover {background: @colfirm2; .true, .false {color: #fff;}
+i {background: url(../img/mag-phone-h.svg);}     
+    
+}   
+    
+
+.tc--page--info--mail {display: inline-block; text-align: center; color: @colfirm2; background: #fff;
+ height: 39px; padding: 11px 12px; border: solid 2px @colfirm2; float: right; font-size: 12px; 
+    
+   
+
+i {display: inline-block; width: 12px; height: 12px; .bgCCC; background: url(../img/mag-mail.svg); margin-right:10px;     margin-bottom: -3px; }  
+}    
+.tc--page--info--mail:hover {background: @colfirm2; color: #fff;
+
+i {background: url(../img/mag-mail-h.svg); }     
+}
+    
+    
+    }
+    
+    
+.one--table-line::before {content: ''; position: absolute; width: 100%; border: dotted 1px #f3f3f3; top:15px; left: 0px;}
+}   
+    
+    
+    
 }
 
     .one-tc {.sc-image {transform: none;}}
@@ -138,7 +207,12 @@ span {font-size: 12px; color: #939393; height: 14px; .bgCLC;  margin-right: 35px
 .one-info { display: inline-block; float: left; width: 70%; padding: 18px 20px; height: 270px; background: #fff;
 }}
  
-    
+ .liners .tc--content-info-one .mag--but-block {
+    margin-top: 10px;
+}   
+ .liners .mag--one-info-mag--page {
+    width: 100% !important;
+}    
     
 .paginator {float: left; width: 100%; text-align: center; padding: 75px 15px;
 a {color: #999999; font-size: 16px; padding: 10px 18px; background: #fff; border-radius: 5px; margin: 0 5px; border: solid 1px #fff}
@@ -149,6 +223,18 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
    
 
 }
+
+
+
+
+.cat--tc--inform--mag {padding-top: 0px;
+
+.mag--infom--txt {float: left; width: 100%;  height: auto; text-align: center; 
+    article {padding: 0px 80px 50px;    background: #fff; 
+        h3 {font-size: 30px; font-family: @fontB; color: #525252; margin-bottom: 40px;}
+    }   
+
+    }}
 
 
 
@@ -242,7 +328,7 @@ a:hover {opacity: 0.75; border: solid 1px @colfirm2;}
  
     
 .cat-tc-one .active-bar {
-    height: 240px;
+    height:auto;
 }    
     
 .cat-tc-one .active-bar .ui-in {
