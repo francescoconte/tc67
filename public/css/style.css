@@ -5411,3 +5411,102 @@ footer .foot-info .end-block .parus a:hover {
     padding: 0px 25px 50px;
   }
 }
+.page--inform {
+  float: left;
+  width: 100%;
+  background: #fafafa;
+  padding-bottom: 65px;
+}
+.page--inform .content .content--float {
+  width: 100%;
+  background: #fff;
+  float: left;
+  padding-bottom: 58px;
+}
+.page--inform h1 {
+  text-align: center;
+  color: #232425 !important;
+  padding-bottom: 25px;
+  font-size: 30px !important;
+  font-family: 'proxima_nova_ltlight', sans-serif !important;
+}
+.page--inform article {
+  padding: 78px 0px 25px;
+  float: left;
+  width: 100%;
+}
+.page--inform article p {
+  margin: 20px 0;
+  line-height: 1.8 !important;
+  float: left;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  font-family: 'ProximaNovaRegular', sans-serif !important;
+  padding: 0 180px;
+}
+.page--inform article img {
+  padding: 0 85px;
+  margin: 20px 0;
+}
+.page--inform article b {
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.page--inform article li {
+  padding-left: 35px;
+  line-height: 1.8 !important;
+  display: block;
+  font-size: 14px !important;
+}
+.page--inform article li span {
+  padding-left: 20px;
+  line-height: 1.8 !important;
+  display: block;
+  float: left;
+  width: 100%;
+  font-family: 'proxima_nova_ltlight', sans-serif !important;
+}
+.page--inform article a {
+  font-family: 'ProximaNovaBold', sans-serif !important;
+  color: #2ea0f0 !important;
+  font-size: 14px !important;
+}
+.news h1 {
+  text-align: center;
+  color: #525252 !important;
+  padding-bottom: 25px;
+  font-size: 30px !important;
+  font-family: 'ProximaNovaBold', sans-serif !important;
+}
+.social--but {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 0px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .page--inform article p {
+    padding: 0 25px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .page--inform article p {
+    padding: 0 25px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 599px) {
+  .page--inform article p {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .page--inform article p {
+    padding: 0 25px;
+  }
+  .page--inform h1 {
+    font-size: 20px !important;
+  }
+  .news h1 {
+    font-size: 20px !important;
+  }
+}
