@@ -5453,7 +5453,7 @@ footer .foot-info .end-block .parus a:hover {
   font-family: 'ProximaNovaBold', sans-serif;
 }
 .page--inform article li {
-  padding-left: 35px;
+  padding: 0 185px 0 205px;
   line-height: 1.8 !important;
   display: block;
   font-size: 14px !important;
@@ -5488,15 +5488,24 @@ footer .foot-info .end-block .parus a:hover {
   .page--inform article p {
     padding: 0 25px;
   }
+  .page--inform article li {
+    padding: 0 25px 0 30px;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .page--inform article p {
     padding: 0 25px;
   }
+  .page--inform article li {
+    padding: 0 25px 0 30px;
+  }
 }
 @media screen and (min-width: 420px) and (max-width: 599px) {
   .page--inform article p {
     padding: 0 25px;
+  }
+  .page--inform article li {
+    padding: 0 25px 0 30px;
   }
 }
 @media screen and (max-width: 419px) {
@@ -5508,5 +5517,11 @@ footer .foot-info .end-block .parus a:hover {
   }
   .news h1 {
     font-size: 20px !important;
+  }
+  .page--inform article img {
+    padding: 0 0px;
+  }
+  .page--inform article li {
+    padding: 0 25px 0 30px;
   }
 }
